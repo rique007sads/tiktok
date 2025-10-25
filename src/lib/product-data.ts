@@ -122,7 +122,7 @@ export const productData: Product = {
               data: "2023-11-01T14:10:00Z",
               texto: "Amei! Eu uso na pracinha com minha filha e outras crianças acabam vindo brincar junto. A máquina funciona direitinho e é super segura. Presente perfeito 🎁💖",
               fotoUrlComentario: null,
-              fotoUrlAutor: "https://i.postimg.cc/C10RzM9j/avatar-woman-2.png"
+              fotoUrlAutor: "https://i.postimg.cc/43w8ZDrd/images.jpg"
           }
       }
     }
