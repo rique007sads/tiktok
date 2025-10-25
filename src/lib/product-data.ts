@@ -51,7 +51,7 @@ export const productData: Product = {
       { id: "img03", url: "https://i.postimg.cc/TPgHGcyW/Cn-P-24102025-232753.png", tipo: "detalhe", alt: "Detalhe da roda traseira do patinete" },
       { id: "img04", url: "https://i.postimg.cc/5NfHm95p/Cn-P-24102025-213856.png", tipo: "vista_lateral", alt: "Vista lateral do patinete" },
       { id: "img05", url: "https://i.postimg.cc/1txXVy5L/Cn-P-24102025-214004.png", tipo: "diagrama", alt: "Diagrama de dimensões do patinete" },
-      { id: "img06", url: "https://picsum.photos/seed/scooter6/600/600", tipo: "cenario", alt: "Patinete elétrico carregando" }
+      { id: "img06", url: "https://i.postimg.cc/NjTxrjQV/Cn-P-24102025-233113.png", tipo: "cenario", alt: "Patinete elétrico carregando" }
     ]
   },
   barraAcoesFixa: {
