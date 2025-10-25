@@ -94,7 +94,7 @@ export const productData: Product = {
               nota: 5,
               data: "2023-11-04T15:20:00Z",
               texto: "Achei que fosse fraca, mas me surpreendeu! As bolhas saem sem parar e fazem um efeito muito bonito. Meu filho corre atrás delas o tempo todo 😂. Leve, fácil de usar e dá pra levar em qualquer lugar.",
-              fotoUrlComentario: null,
+              fotoUrlComentario: "https://i.postimg.cc/DZL81hnZ/Whats-App-Image-2025-10-25-at-03-34-31.jpg",
               fotoUrlAutor: "https://i.postimg.cc/fTx4jXj3/Cn-P-24102025-235201.png"
           },
           "comentarioId_CO": {
@@ -129,8 +129,8 @@ export const productData: Product = {
   },
   descricao: {
     titulo: "Descrição",
-    textoPrincipal: "A escolha ideal para transformar qualquer momento em diversão! Basta ligar e a máquina começa a criar centenas de bolhas por minuto. As crianças ficam encantadas vendo o ambiente se encher de bolhinhas! Perfeita para festas, aniversários e brincadeiras no dia a dia.",
-    textoCompleto: "Com design portátil e leve, a máquina é fácil de transportar e usar. Não precisa assoprar, não faz sujeira e é segura para crianças. Ideal para usar no quintal, na sala, no parque ou em ambientes externos. A chuva de bolhinhas cria uma atmosfera mágica e alegre. As crianças amam correr e estourar bolhas, e os adultos também! Um presente que garante sorrisos, fotos lindas e horas de entretenimento.",
+    textoPrincipal: "A escolha ideal para transformar qualquer momento em diversão! Basta ligar e a máquina começa a criar centenas de bolhas por minuto. As crianças ficam encantadas vendo o ambiente se encher de bolhinhas! \nPerfeita para festas, aniversários e brincadeiras no dia a dia.",
+    textoCompleto: "Com design portátil e leve, a máquina é fácil de transportar e usar. Não precisa assoprar, não faz sujeira e é segura para crianças. Ideal para usar no quintal, na sala, no parque ou em ambientes externos.\nA chuva de bolhinhas cria uma atmosfera mágica e alegre. As crianças amam correr e estourar bolhas, e os adultos também! Um presente que garante sorrisos, fotos lindas e horas de entretenimento.",
     fichaTecnica: {
       "NomeDoProduto": "Máquina de Bolhas Automática Elétrica",
       "Alimentacao": "Pode variar por modelo: USB / Pilhas / Bateria Recarregável",
