@@ -2,13 +2,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Star } from 'lucide-react';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import Image from 'next/image';
 
 interface Review {
     autor: string;
     cidade: string;
     nota: number;
     texto: string;
+    fotoUrlComentario?: string | null;
 }
 
 interface CustomerReviewsProps {
@@ -62,6 +64,11 @@ export function CustomerReviews({ reviews, totalReviews, averageRating, title }:
               ))}
             </div>
             <p className="text-sm">{review.texto}</p>
+            {review.fotoUrlComentario && (
+                <div className="relative w-20 h-20 rounded-md overflow-hidden">
+                    <Image src={review.fotoUrlComentario} alt={`Review photo by ${review.autor}`} fill className="object-cover" />
+                </div>
+            )}
           </div>
         ))}
         {reviews.length > 0 && (
@@ -73,3 +80,5 @@ export function CustomerReviews({ reviews, totalReviews, averageRating, title }:
     </Card>
   );
 }
+
+    

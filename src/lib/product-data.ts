@@ -36,20 +36,6 @@ export const productData: Product = {
       detalhe: "Devoluções gratuitas em 30 dias"
     }
   },
-  comentariosAmostra: [
-    {
-      autor: "Pedro Raul",
-      cidade: "Belo Horizonte, MG",
-      nota: 5,
-      texto: "Excelente meio de transporte para quem almeja não gastar com gasolina e busca praticidade..."
-    },
-    {
-      autor: "Pietro Santos",
-      cidade: "Curitiba, PR",
-      nota: 5,
-      texto: "Esse patinete é excelente!! recomendo demais ele sim pra quem mora a poucos quilômetros..."
-    }
-  ],
   imagens: {
     contadorAtual: 1,
     contadorTotal: 6,
@@ -84,28 +70,43 @@ export const productData: Product = {
     ],
     avaliacoes: {
       tituloSecao: "Avaliações dos clientes",
-      estatisticas: {
-        mediaAvaliacao: 4.7,
-        totalAvaliacoes: 491,
-        totalVendidos: 4473
+      avaliacoesGerais: {
+          totalComentarios: 491,
+          mediaGeral: 4.7
       },
-      resumoPorEstrela: {
-        "5estrelas": 155,
-        "4estrelas": 22
-      },
-      comentariosAmostra: {
-        "pedroRaul": {
-          autor: "Pedro Raul",
-          cidade: "Belo Horizonte, MG",
-          nota: 5,
-          texto: "Excelente meio de transporte para quem almeja não gastar com gasolina e busca praticidade..."
-        },
-        "pietroSantos": {
-          autor: "Pietro Santos",
-          cidade: "Curitiba, PR",
-          nota: 5,
-          texto: "Esse patinete é excelente!! recomendo demais ele sim pra quem mora a poucos quilômetros..."
-        }
+      comentarios: {
+          "comentarioId_CS": {
+              autor: "Carlos Silva",
+              cidade: "São Paulo, SP",
+              nota: 5,
+              data: "2023-10-27T10:00:00Z",
+              texto: "Comprei pro meu filho ele amou está indo pro trabalho com o patinete fácil fé andar praticidade na hora dd guardar produto excelente e meu filho conseguiu colocar no seguro.",
+              fotoUrlComentario: "https://picsum.photos/seed/review1/100/100"
+          },
+          "comentarioId_RL": {
+              autor: "Rafaela Lima",
+              cidade: "Rio de Janeiro, RJ",
+              nota: 4,
+              data: "2023-10-27T10:15:00Z",
+              texto: "Gostei bastante, achei que era mais lento mas a velocidade me surpreendeu, no manual diz que vai ate 25 mas claramente da pra ver a velocidade almentando quando chega no limite de 25, deve chegar nos 30, a bateria dura até que bem, recarregamos a cada 3 dias.",
+              fotoUrlComentario: "https://picsum.photos/seed/review2/100/100"
+          },
+          "comentarioId_PR": {
+              autor: "Pedro Raul",
+              cidade: "Belo Horizonte, MG",
+              nota: 5,
+              data: "2023-10-27T10:30:00Z",
+              texto: "Excelente meio de transporte para quem almeja não gastar com gasolina e busca praticidade, uso para ir ao trabalho e foi uma escolha ótima adquirir o produto!!.",
+              fotoUrlComentario: "https://picsum.photos/seed/review3/100/100"
+          },
+          "comentarioId_PS": {
+              autor: "Pietro Santos",
+              cidade: "Curitiba, PR",
+              nota: 5,
+              data: "2023-10-27T10:45:00Z",
+              texto: "Esse patinete é excelente!! recomendo demais ele sim pra quem mora a poucos quilômetros do trabalho em área urbanizada ou até para lazer. A velocidade dele é ideal!! tenho 97 kg e ele alcança sim os 25km/h de boa! parece ser resistente e é discreto. Tem uma ótima frenagem! eu gostei muito dele! uso todo dia!.",
+              fotoUrlComentario: "https://picsum.photos/seed/review4/100/100"
+          }
       }
     }
   },
@@ -125,7 +126,7 @@ export const productData: Product = {
       "Iluminacao": "Farol em LED",
       "Estrutura": "Aluminio reforçado (100% em alumínio)",
       "Tipo": "Dobrável com novo sistema de trava",
-      "Carregador": "Bivolt (110V/220V - 50/60Hz)",
+      "Carregador": "Bivolt (110V/2220V - 50/60Hz)",
       "Display": ["Marcador de velocidade", "Nível de bateria", "Indicador de modo de pilotagem"],
       "ModosPilotagem": ["ECO: até 10 km/h", "Drive: até 20 km/h", "Sport: até 25 km/h"],
       "TempoRecarga": "4 a 5 horas"
@@ -149,3 +150,5 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
   },
   {} as Record<string, ProductImage>
 );
+
+    

@@ -21,6 +21,15 @@ export interface GalleryImage {
   alt: string;
 }
 
+interface Comentario {
+    autor: string;
+    cidade: string;
+    nota: number;
+    data: string;
+    texto: string;
+    fotoUrlComentario?: string | null;
+}
+
 export interface Product {
   nome: string;
   marca?: string;
@@ -55,12 +64,6 @@ export interface Product {
       detalhe: string;
     };
   };
-  comentariosAmostra: {
-    autor: string;
-    cidade: string;
-    nota: number;
-    texto: string;
-  }[];
   imagens: {
     contadorAtual: number;
     contadorTotal: number;
@@ -83,23 +86,13 @@ export interface Product {
     diferenciais: string[];
     avaliacoes: {
         tituloSecao: string;
-        estatisticas: {
-            mediaAvaliacao: number;
-            totalAvaliacoes: number;
-            totalVendidos: number;
+        avaliacoesGerais: {
+            totalComentarios: number;
+            mediaGeral: number;
         };
-        resumoPorEstrela: {
-            '5estrelas': number;
-            '4estrelas': number;
+        comentarios: {
+            [key: string]: Comentario;
         };
-        comentariosAmostra: {
-            [key: string]: {
-                autor: string;
-                cidade: string;
-                nota: number;
-                texto: string;
-            }
-        }
     }
   };
   descricao: {
@@ -111,3 +104,5 @@ export interface Product {
     avisoLegal: string;
   }
 }
+
+    

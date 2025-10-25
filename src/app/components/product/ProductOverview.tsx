@@ -22,7 +22,7 @@ export function ProductOverview({ product }: ProductOverviewProps) {
     return null;
   }
 
-  const reviews = Object.values(visaoGeral.avaliacoes.comentariosAmostra);
+  const reviews = Object.values(visaoGeral.avaliacoes.comentarios);
 
   return (
     <div className="space-y-4">
@@ -42,9 +42,11 @@ export function ProductOverview({ product }: ProductOverviewProps) {
       <CustomerReviews
         title={visaoGeral.avaliacoes.tituloSecao}
         reviews={reviews}
-        totalReviews={visaoGeral.avaliacoes.estatisticas.totalAvaliacoes}
-        averageRating={visaoGeral.avaliacoes.estatisticas.mediaAvaliacao}
+        totalReviews={visaoGeral.avaliacoes.avaliacoesGerais.totalComentarios}
+        averageRating={visaoGeral.avaliacoes.avaliacoesGerais.mediaGeral}
       />
     </div>
   );
 }
+
+    
