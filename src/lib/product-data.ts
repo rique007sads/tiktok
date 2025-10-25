@@ -120,31 +120,23 @@ export const productData: Product = {
   },
   descricao: {
     titulo: "Descrição",
-    textoPrincipal: "O Patinete Elétrico Foston FS-S09 Pro é a escolha ideal para quem busca mobilidade urbana com praticidade, tecnologia e desempenho. Solução perfeita para sua locomoção diária, de forma rápida, segura e sustentável.",
-    textoCompleto: "Equipado com motor de 300W, três modos de pilotagem e conexão via Bluetooth com aplicativo, este patinete oferece uma condução inteligente e segura. Sua estrutura 100% em alumínio reforçado garante resistência e leveza, enquanto o design dobrável o torna fácil de transportar e ideal para o dia a dia. Para maior estabilidade e segurança, conta com pneus com câmara de ar e freios a disco, além de farol em LED e sistema de freios eficiente. A conectividade Bluetooth permite controlar diversas funções pelo smartphone.",
+    textoPrincipal: "A escolha ideal para transformar qualquer momento em diversão! Basta ligar e a máquina começa a criar centenas de bolhas por minuto. As crianças ficam encantadas vendo o ambiente se encher de bolhinhas! Perfeita para festas, aniversários e brincadeiras no dia a dia.",
+    textoCompleto: "Com design portátil e leve, a máquina é fácil de transportar e usar. Não precisa assoprar, não faz sujeira e é segura para crianças. Ideal para usar no quintal, na sala, no parque ou em ambientes externos. A chuva de bolhinhas cria uma atmosfera mágica e alegre. As crianças amam correr e estourar bolhas, e os adultos também! Um presente que garante sorrisos, fotos lindas e horas de entretenimento.",
     fichaTecnica: {
-      "Marca": "Foston",
-      "Potencia": "300W",
-      "VelocidadeMaxima": "Até 25 km/h",
-      "Bateria": "Lítio 10.400mAh / 36V (Longa duração)",
-      "Autonomia": "de 20 a 32 km (varia conforme terreno e peso do condutor)",
-      "PesoSuportado": "até 100 kg",
-      "Pneus": "8.5\" com câmara de ar",
-      "CalibragemRecomendada": "45 a 50 libras",
-      "SistemaDeFreios": "Freio a disco",
-      "Iluminacao": "Farol em LED",
-      "Estrutura": "Aluminio reforçado (100% em alumínio)",
-      "Tipo": "Dobrável com novo sistema de trava",
-      "Carregador": "Bivolt (110V/2220V - 50/60Hz)",
-      "Display": ["Marcador de velocidade", "Nível de bateria", "Indicador de modo de pilotagem"],
-      "ModosPilotagem": ["ECO: até 10 km/h", "Drive: até 20 km/h", "Sport: até 25 km/h"],
-      "TempoRecarga": "4 a 5 horas"
+      "NomeDoProduto": "Máquina de Bolhas Automática Elétrica",
+      "Alimentacao": "Pode variar por modelo: USB / Pilhas / Bateria Recarregável",
+      "Material": "Plástico ABS resistente e seguro para crianças",
+      "Uso": "Infantil / Festas / Brincadeiras Internas e Externas",
+      "ProducaoDeBolhas": "Alto volume (vários furos que liberam bolhas contínuas)",
+      "Portabilidade": "Leve e fácil de transportar",
+      "IdadeRecomendada": "3 anos ou mais"
     },
     dicasDeUso: [
-      "Mantenha a calibragem correta dos pneus para melhor desempenho e conforto.",
-      "Recarregue totalmente a bateria antes do primeiro uso.",
-      "Evite terrenos extremamente irregulares ou molhados para maior durabilidade do equipamento.",
-      "Acompanhe e controle as funções do patinete via aplicativo Bluetooth compatível."
+      "Use líquido próprio para bolhas para melhor resultado (misturas caseiras também funcionam)",
+      "Mantenha o reservatório sempre na altura correta para que a máquina não borre o motor",
+      "Para usar em festas, posicione em um local elevado para espalhar as bolhas no ambiente",
+      "Após o uso, limpe o bocal com um pano úmido para não acumular líquido seco",
+      "Evite deixar o líquido derramar sobre o motor"
     ],
     avisoLegal: "Idade mínima recomendada: 8 anos."
   }
