@@ -44,9 +44,9 @@ export const productData: Product = {
   imagens: {
     contadorAtual: 1,
     contadorTotal: 5,
-    urlPrincipal: "https://i.postimg.cc/Gh4jj2hv/Cn-P-24102025-212743.png",
+    urlPrincipal: "https://i.postimg.cc/Dwtm8RFX/tiktok.webp",
     galeria: [
-      { id: "img01", url: "https://i.postimg.cc/Gh4jj2hv/Cn-P-24102025-212743.png", tipo: "principal", alt: "Patinete elétrico inteiro" },
+      { id: "img01", url: "https://i.postimg.cc/Dwtm8RFX/tiktok.webp", tipo: "principal", alt: "Patinete elétrico inteiro" },
       { id: "img02", url: "https://i.postimg.cc/mDF9KdhS/Cn-P-24102025-213611.png", tipo: "dobrado", alt: "Patinete elétrico dobrado" },
       { id: "img03", url: "https://i.postimg.cc/TPgHGcyW/Cn-P-24102025-232753.png", tipo: "detalhe", alt: "Detalhe da roda traseira do patinete" },
       { id: "img04", url: "https://i.postimg.cc/5NfHm95p/Cn-P-24102025-213856.png", tipo: "vista_lateral", alt: "Vista lateral do patinete" },
@@ -94,7 +94,7 @@ export const productData: Product = {
               nota: 4,
               data: "2023-10-27T10:15:00Z",
               texto: "Gostei bastante, achei que era mais lento mas a velocidade me surpreendeu, no manual diz que vai ate 25 mas claramente da pra ver a velocidade almentando quando chega no limite de 25, deve chegar nos 30, a bateria dura até que bem, recarregamos a cada 3 dias.",
-              fotoUrlComentario: "https://i.postimg.cc/43WHYDHF/Cn-P-24102025-233352.png",
+              fotoUrlComentario: null,
               fotoUrlAutor: "https://i.postimg.cc/dtRXTFwr/Cn-P-24102025-235333.png"
           },
           "comentarioId_PR": {
