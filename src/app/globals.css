@@ -85,37 +85,36 @@
     background-color: #F84F66; 
     color: white;
     font-weight: bold;
-    border: none;
     border-radius: 8px; 
-
-    /* PROPRIEDADES FLEXBOX DE CENTRALIZAÇÃO VERTICAL E HORIZONTAL */
+    
+    /* Configurações de centralização: mantenha */
     display: flex;
     flex-direction: column; 
     align-items: center; 
-    justify-content: center; /* CHAVE: Centraliza o conteúdo dentro da altura do botão */
-
-    /* AJUSTE CHAVE: Padding vertical compactado. */
-    /* Este padding controla o espaço em branco total dentro do botão. */
-    padding: 8px 15px; 
+    justify-content: center; 
     
-    /* Garante que o texto se alinhe bem */
+    /* Padding para controlar o tamanho total do botão */
+    padding: 8px 15px; 
     text-align: center;
 }
 
 .texto-acao-principal { /* O texto 'Comprar agora' */
-    font-size: 18px; 
+    /* AJUSTE CHAVE 1: Fonte menor */
+    font-size: 16px; 
     font-weight: 700;
-    line-height: 1.0; /* Minimiza a altura da linha */
+    line-height: 1.0; /* Maximiza a proximidade */
     margin-bottom: 0px; 
 }
 
-.detalhe-preco-frete { /* O texto 'R$ 67,90 | Frete grátis' */
-    font-size: 12px;
+.detalhe-preco-frete { /* O texto 'R$ 20,40 | Frete grátis' */
+    /* AJUSTE CHAVE 2: Fonte menor */
+    font-size: 10px; 
     font-weight: 500;
     opacity: 0.9; 
-    /* AJUSTE CHAVE: Usa margin-top muito pequeno ou zero para grudar no topo */
-    margin-top: 2px; 
-    line-height: 1.0; /* Minimiza a altura da linha */
+    
+    /* AJUSTE CHAVE 3: Remove espaço extra entre as linhas */
+    margin-top: 0px; 
+    line-height: 1.0; 
 }
 
 /* Container que armazena todas as miniaturas */
