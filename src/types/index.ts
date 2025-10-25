@@ -28,6 +28,7 @@ interface Comentario {
     data: string;
     texto: string;
     fotoUrlComentario?: string | null;
+    fotoUrlAutor?: string | null;
 }
 
 export interface Product {

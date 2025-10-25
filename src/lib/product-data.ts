@@ -86,7 +86,8 @@ export const productData: Product = {
               nota: 5,
               data: "2023-10-27T10:00:00Z",
               texto: "Comprei pro meu filho ele amou está indo pro trabalho com o patinete fácil fé andar praticidade na hora dd guardar produto excelente e meu filho conseguiu colocar no seguro.",
-              fotoUrlComentario: "https://i.postimg.cc/3rcjSvRq/Cn-P-24102025-233226.png"
+              fotoUrlComentario: "https://i.postimg.cc/3rcjSvRq/Cn-P-24102025-233226.png",
+              fotoUrlAutor: "https://i.postimg.cc/fTx4jXj3/Cn-P-24102025-235201.png"
           },
           "comentarioId_RL": {
               autor: "Rafaela Lima",

@@ -11,6 +11,7 @@ interface Review {
     nota: number;
     texto: string;
     fotoUrlComentario?: string | null;
+    fotoUrlAutor?: string | null;
 }
 
 interface CustomerReviewsProps {
@@ -48,7 +49,11 @@ export function CustomerReviews({ reviews, totalReviews, averageRating, title }:
           <div key={index} className="space-y-2">
             <div className="flex items-center gap-2">
               <Avatar className="h-8 w-8">
-                <AvatarFallback>{review.autor.charAt(0)}</AvatarFallback>
+                {review.fotoUrlAutor ? (
+                  <AvatarImage src={review.fotoUrlAutor} alt={`Foto de ${review.autor}`} />
+                ) : (
+                  <AvatarFallback>{review.autor.charAt(0)}</AvatarFallback>
+                )}
               </Avatar>
               <div>
                 <p className="font-semibold text-sm">{review.autor}</p>
