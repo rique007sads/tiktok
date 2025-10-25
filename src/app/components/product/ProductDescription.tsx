@@ -10,6 +10,11 @@ const SectionTitle = ({ children }: { children: React.ReactNode }) => (
   <h3 className="font-bold text-base mt-4 mb-2">{children}</h3>
 );
 
+// Helper function to format camelCase keys into separate words
+const formatLabel = (key: string) => {
+  return key.replace(/([A-Z])/g, ' $1').replace(/^./, (str) => str.toUpperCase());
+};
+
 export function ProductDescription({ product }: ProductDescriptionProps) {
   const { descricao } = product;
   if (!descricao) {
@@ -33,7 +38,7 @@ export function ProductDescription({ product }: ProductDescriptionProps) {
             <ul className="space-y-1">
               {Object.entries(descricao.fichaTecnica).map(([key, value]) => (
                 <li key={key} className="grid grid-cols-2 gap-2">
-                  <span className="font-semibold">{key}</span>
+                  <span className="font-semibold">{formatLabel(key)}</span>
                   {Array.isArray(value) ? (
                     <ul className="list-disc list-inside">
                       {value.map((item, i) => <li key={i}>{item}</li>)}
