@@ -9,6 +9,7 @@ import Image from 'next/image';
 import { OfferTimer } from './components/product/OfferTimer';
 import { CustomerReviews } from './components/product/CustomerReviews';
 import { ProductImageGallery } from './components/product/ProductImageGallery';
+import { ProductDescription } from './components/product/ProductDescription';
 
 export default function Home() {
   const product: Product = productData;
@@ -16,7 +17,6 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       
-
       <main className="flex-grow pb-24">
         <ProductImageGallery images={product.imagens.galeria} productName={product.nome} />
 
@@ -83,6 +83,9 @@ export default function Home() {
                 <ChevronRight className="h-5 w-5 text-muted-foreground" />
             </button>
           </div>
+          
+          {/* Product Description */}
+          <ProductDescription product={product} />
 
           {/* Reviews */}
           <CustomerReviews 

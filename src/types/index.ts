@@ -23,6 +23,8 @@ export interface GalleryImage {
 
 export interface Product {
   nome: string;
+  marca?: string;
+  modelo?: string;
   estatisticas: {
     mediaAvaliacao: number;
     totalAvaliacoes: number;
@@ -75,4 +77,13 @@ export interface Product {
       acao: string;
     };
   };
+  descricao?: {
+    resumo: string;
+    detalhes: string[];
+  };
+  diferenciais?: string[];
+  fichaTecnica?: Record<string, string | string[]>;
+  dicasDeUso?: string[];
+  garantiasLoja?: string[];
+  avisoLegal?: string;
 }

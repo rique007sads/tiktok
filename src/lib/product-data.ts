@@ -1,8 +1,11 @@
+
 import type { Product, ProductImage, ProductReview } from '@/types';
 import placeholderData from './placeholder-images.json';
 
 export const productData: Product = {
   nome: "Patinete Elétrico Scooter De Alumínio Com Bluetooth 30km/h",
+  marca: "Foston",
+  modelo: "FS-S09 Pro",
   estatisticas: {
     mediaAvaliacao: 4.8,
     totalAvaliacoes: 892,
@@ -69,7 +72,53 @@ export const productData: Product = {
       precoDetalhe: "R$ 67,90 | Frete grátis",
       acao: "checkout_direto"
     }
-  }
+  },
+  descricao: {
+    resumo: "A escolha ideal para quem busca mobilidade urbana com praticidade, tecnologia e desempenho. Solução perfeita para sua locomoção diária, de forma rápida, segura e sustentável.",
+    detalhes: [
+      "Equipado com motor de 300W e conexão via Bluetooth com aplicativo para uma condução inteligente e segura.",
+      "Estrutura 100% em alumínio reforçado, garantindo resistência e leveza.",
+      "Design dobrável, fácil de transportar e ideal para diferentes situações do cotidiano.",
+      "Pneus com câmara de ar e freios a disco para maior estabilidade e segurança.",
+      "Possui farol em LED e sistema de freios eficiente.",
+      "Conectividade Bluetooth permite controle de diversas funções via smartphone."
+    ]
+  },
+  diferenciais: [
+    "Economia de tempo no trânsito",
+    "Sustentável e ecológico",
+    "Fácil manuseio e controle",
+    "Baixo custo de manutenção",
+    "Ideal para percursos urbanos"
+  ],
+  fichaTecnica: {
+    "Potencia": "300W",
+    "VelocidadeMaxima": "Até 25 km/h",
+    "Bateria": "Lítio 10.400mAh / 36V (Longa duração)",
+    "Autonomia": "de 20 a 32 km (varia conforme terreno e peso do condutor)",
+    "PesoSuportado": "até 100 kg",
+    "Pneus": "8.5\" com câmara de ar",
+    "CalibragemRecomendada": "45 a 50 libras",
+    "SistemaDeFreios": "Freio a disco",
+    "Iluminacao": "Farol em LED",
+    "Estrutura": "Aluminio reforçado (100% em alumínio)",
+    "Tipo": "Dobrável com novo sistema de trava",
+    "Carregador": "Bivolt (110V/220V - 50/60Hz)",
+    "Display": ["Marcador de velocidade", "Nível de bateria", "Indicador de modo de pilotagem"],
+    "ModosPilotagem": ["ECO: até 10 km/h", "Drive: até 20 km/h", "Sport: até 25 km/h"],
+    "TempoRecarga": "4 a 5 horas"
+  },
+  dicasDeUso: [
+    "Mantenha a calibragem correta dos pneus para melhor desempenho e conforto.",
+    "Recarregue totalmente a bateria antes do primeiro uso.",
+    "Evite terrenos extremamente irregulares ou molhados para maior durabilidade do equipamento.",
+    "Acompanhe e controle as funções do patinete via aplicativo Bluetooth compatível."
+  ],
+  garantiasLoja: [
+    "PRODUTO ORIGINAL, LACRADO E COM NOTA FISCAL",
+    "ENVIO RÁPIDO PARA TODO BRASIL"
+  ],
+  avisoLegal: "Idade mínima recomendada: 8 anos."
 };
 
 const imagePlaceholders: ProductImage[] = placeholderData.placeholderImages;
