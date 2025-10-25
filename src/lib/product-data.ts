@@ -110,7 +110,7 @@ export const productData: Product = {
               nota: 5,
               data: "2023-10-27T10:45:00Z",
               texto: "Esse patinete é excelente!! recomendo demais ele sim pra quem mora a poucos quilômetros do trabalho em área urbanizada ou até para lazer. A velocidade dele é ideal!! tenho 97 kg e ele alcança sim os 25km/h de boa! parece ser resistente e é discreto. Tem uma ótima frenagem! eu gostei muito dele! uso todo dia!.",
-              fotoUrlComentario: "https://i.postimg.cc/tg4zJQ4d/Cn-P-24102025-233736.png"
+              fotoUrlComentario: null
           }
       }
     }
