@@ -155,3 +155,8 @@
 .miniatura-item.ativa {
     border: 2px solid #F84F66;
 }
+
+.menus-rodape-estatico, .botao-ir-loja {
+    cursor: default !important;
+    pointer-events: none;
+}

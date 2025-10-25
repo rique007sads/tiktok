@@ -23,7 +23,7 @@ export function StoreInfo({ store }: StoreInfoProps) {
             </div>
           </div>
         </div>
-        <Button variant="outline">Ir à loja</Button>
+        <Button variant="outline" className="botao-ir-loja">Ir à loja</Button>
       </CardHeader>
       <CardContent className="p-3 pt-0 text-sm">
         {store.statusVerificacao.verificada && (
@@ -34,7 +34,7 @@ export function StoreInfo({ store }: StoreInfoProps) {
         )}
         <div className="w-full border-t">
           {store.menusRodape.map((menu, index) => (
-            <div key={index} className="border-b">
+            <div key={index} className="border-b menus-rodape-estatico">
                 <div className="flex justify-between items-center py-3 text-sm font-medium">
                     <span>{menu.titulo}</span>
                     <ChevronDown className="h-4 w-4 text-muted-foreground" />
