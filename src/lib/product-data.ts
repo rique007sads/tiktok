@@ -3,9 +3,9 @@ import type { Product, ProductImage, Store } from '@/types';
 import placeholderData from './placeholder-images.json';
 
 export const productData: Product = {
-  idLoja: "techMobilityBrasil",
+  idLoja: "nextWheelStore",
   vendedor: {
-    nome: "Tech Mobility Brasil",
+    nome: "NextWheel Store",
     urlIconeVerificacao: ""
   },
   nome: "Patinete Elétrico Scooter De Alumínio Com Bluetooth 30km/h",
@@ -148,7 +148,7 @@ export const productData: Product = {
 };
 
 export const storeData: Store = {
-  nome: "Tech Mobility Brasil",
+  nome: "NextWheel Store",
   slogan: "Shop",
   statusVerificacao: {
     verificada: true,
