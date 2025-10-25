@@ -162,17 +162,17 @@ export const storeData: Store = {
   menusRodape: [
     {
       titulo: "Informações da empresa",
-      conteudo: "Dados da loja...",
+      conteudo: "",
       acao: "expandir_ou_navegar"
     },
     {
       titulo: "Suporte ao cliente",
-      conteudo: "Opções de contato, FAQ, e horário de atendimento.",
+      conteudo: "",
       acao: "expandir_ou_navegar"
     },
     {
       titulo: "Políticas e aspectos legais",
-      conteudo: "Termos de uso, política de privacidade, e política de devolução e garantia.",
+      conteudo: "",
       acao: "expandir_ou_navegar"
     }
   ]
