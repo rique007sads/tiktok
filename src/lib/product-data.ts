@@ -154,7 +154,7 @@ export const storeData: Store = {
     verificada: true,
     plataforma: "Mercado Livre"
   },
-  urlLogo: "https://placehold.co/40x40",
+  urlLogo: "https://i.postimg.cc/X7tZFKJG/Cn-P-24102025-232009.png",
   menusRodape: [
     {
       titulo: "Informações da empresa",
