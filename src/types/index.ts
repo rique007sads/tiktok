@@ -105,4 +105,19 @@ export interface Product {
   }
 }
 
+export interface Store {
+  nome: string;
+  slogan: string;
+  statusVerificacao: {
+    verificada: boolean;
+    plataforma: string;
+  };
+  urlLogo: string;
+  menusRodape: {
+    titulo: string;
+    conteudo: string;
+    acao: string;
+  }[];
+}
+
     

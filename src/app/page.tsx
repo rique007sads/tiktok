@@ -1,19 +1,21 @@
 
 'use client';
 
-import { productData } from '@/lib/product-data';
-import type { Product } from '@/types';
+import { productData, storeData } from '@/lib/product-data';
+import type { Product, Store } from '@/types';
 import { Button } from '@/components/ui/button';
-import { MessageSquare, Store, ChevronRight, Star, Clock, Package, RotateCw, ShoppingCart } from 'lucide-react';
+import { MessageSquare, Store as StoreIcon, ChevronRight, Star, Clock, Package, RotateCw, ShoppingCart, Verified, MessageCircle } from 'lucide-react';
 import { OfferTimer } from './components/product/OfferTimer';
 import { ProductImageGallery } from './components/product/ProductImageGallery';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ProductOverview } from './components/product/ProductOverview';
 import { ProductDescription } from './components/product/ProductDescription';
+import { StoreInfo } from './components/store/StoreInfo';
 
 
 export default function Home() {
   const product: Product = productData;
+  const store: Store = storeData;
 
   return (
     <div className="flex flex-col min-h-screen bg-background">
@@ -98,6 +100,8 @@ export default function Home() {
             </TabsContent>
           </Tabs>
 
+          <StoreInfo store={store} />
+
         </div>
       </main>
 
@@ -105,7 +109,7 @@ export default function Home() {
         <div className="container mx-auto px-2 h-16 flex items-center justify-between gap-2">
             <div className="flex items-center justify-around w-1/3">
                  <Button variant="ghost" className="flex flex-col h-auto p-1 items-center gap-1">
-                    <Store className="h-5 w-5" />
+                    <StoreIcon className="h-5 w-5" />
                     <span className="text-xs">{product.barraAcoesFixa.loja.texto}</span>
                 </Button>
                 <Button variant="ghost" className="flex flex-col h-auto p-1 items-center gap-1">
@@ -127,3 +131,5 @@ export default function Home() {
     </div>
   );
 }
+
+    

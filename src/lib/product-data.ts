@@ -1,5 +1,5 @@
 
-import type { Product, ProductImage } from '@/types';
+import type { Product, ProductImage, Store } from '@/types';
 import placeholderData from './placeholder-images.json';
 
 export const productData: Product = {
@@ -115,6 +115,7 @@ export const productData: Product = {
     textoPrincipal: "O Patinete Elétrico Foston FS-S09 Pro é a escolha ideal para quem busca mobilidade urbana com praticidade, tecnologia e desempenho. Solução perfeita para sua locomoção diária, de forma rápida, segura e sustentável.",
     textoCompleto: "Equipado com motor de 300W, três modos de pilotagem e conexão via Bluetooth com aplicativo, este patinete oferece uma condução inteligente e segura. Sua estrutura 100% em alumínio reforçado garante resistência e leveza, enquanto o design dobrável o torna fácil de transportar e ideal para o dia a dia. Para maior estabilidade e segurança, conta com pneus com câmara de ar e freios a disco, além de farol em LED e sistema de freios eficiente. A conectividade Bluetooth permite controlar diversas funções pelo smartphone.",
     fichaTecnica: {
+      "Marca": "Foston",
       "Potencia": "300W",
       "VelocidadeMaxima": "Até 25 km/h",
       "Bateria": "Lítio 10.400mAh / 36V (Longa duração)",
@@ -140,6 +141,34 @@ export const productData: Product = {
     avisoLegal: "Idade mínima recomendada: 8 anos."
   }
 };
+
+export const storeData: Store = {
+  nome: "Tech Mobility Brasil",
+  slogan: "Shop",
+  statusVerificacao: {
+    verificada: true,
+    plataforma: "Mercado Livre"
+  },
+  urlLogo: "https://placehold.co/40x40",
+  menusRodape: [
+    {
+      titulo: "Informações da empresa",
+      conteudo: "Aqui estão os dados de CNPJ, endereço e história da loja.",
+      acao: "expandir_ou_navegar"
+    },
+    {
+      titulo: "Suporte ao cliente",
+      conteudo: "Opções de contato, FAQ, e horário de atendimento.",
+      acao: "expandir_ou_navegar"
+    },
+    {
+      titulo: "Políticas e aspectos legais",
+      conteudo: "Termos de uso, política de privacidade, e política de devolução e garantia.",
+      acao: "expandir_ou_navegar"
+    }
+  ]
+};
+
 
 const imagePlaceholders: ProductImage[] = placeholderData.placeholderImages;
 
