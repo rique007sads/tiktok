@@ -8,7 +8,7 @@ export const productData: Product = {
     nome: "NextWheel Store",
     urlIconeVerificacao: ""
   },
-  nome: "Máquina de Bolhas Automática Elétrica – diversão garantida para crianças e família! Basta ligar que ela começa a soltar centenas de bolhas coloridas por minuto, criando um ambiente mágico e divertido instantaneamente.",
+  nome: "Máquina de Bolhas Automática Elétrica – diversão garantida para crianças e família!, criando um ambiente mágico e divertido instantaneamente.",
   marca: "Foston",
   modelo: "FS-S09 Pro",
   estatisticas: {
@@ -189,4 +189,5 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
 );
 
 
+    
     
