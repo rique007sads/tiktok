@@ -2,9 +2,8 @@
 import type { Store } from '@/types';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import Image from 'next/image';
-import { Verified, MessageCircle } from 'lucide-react';
+import { Verified, MessageCircle, ChevronDown } from 'lucide-react';
 
 interface StoreInfoProps {
   store: Store;
@@ -33,19 +32,22 @@ export function StoreInfo({ store }: StoreInfoProps) {
             <span>Loja verificada por {store.statusVerificacao.plataforma}</span>
           </div>
         )}
-        <Accordion type="single" collapsible className="w-full border-t">
+        <div className="w-full border-t">
           {store.menusRodape.map((menu, index) => (
-            <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger className="py-3 text-sm">{menu.titulo}</AccordionTrigger>
-              <AccordionContent className="text-muted-foreground pb-3">
-                {menu.conteudo}
-              </AccordionContent>
-            </AccordionItem>
+            <div key={index} className="border-b">
+                <div className="flex justify-between items-center py-3 text-sm font-medium">
+                    <span>{menu.titulo}</span>
+                    <ChevronDown className="h-4 w-4 text-muted-foreground" />
+                </div>
+                {menu.conteudo && (
+                    <div className="text-muted-foreground pb-3">
+                        {menu.conteudo}
+                    </div>
+                )}
+            </div>
           ))}
-        </Accordion>
+        </div>
       </CardContent>
     </Card>
   );
 }
-
-    
