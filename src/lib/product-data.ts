@@ -5,7 +5,7 @@ import placeholderData from './placeholder-images.json';
 export const productData: Product = {
   idLoja: "nextWheelStore",
   vendedor: {
-    nome: "NextWheel Store",
+    nome: "BrincaKids",
     urlIconeVerificacao: ""
   },
   nome: "Máquina de Bolhas Automática Elétrica – diversão garantida para crianças e família!, criando um ambiente mágico e divertido instantaneamente.",
@@ -152,13 +152,13 @@ export const productData: Product = {
 };
 
 export const storeData: Store = {
-  nome: "NextWheel Store",
+  nome: "BrincaKids",
   slogan: "Shop",
   statusVerificacao: {
     verificada: true,
     plataforma: "TikTok Shop"
   },
-  urlLogo: "https://i.postimg.cc/X7tZFKJG/Cn-P-24102025-232009.png",
+  urlLogo: "https://i.postimg.cc/QM0rPnm6/one-person-young-adult-latin-woman-25-years-old-sunset-hair-wind-adult-women-smiling-outdoors-F10003.jpg",
   menusRodape: [
     {
       titulo: "Informações da empresa",
@@ -196,4 +196,5 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
     
 
     
+
 
