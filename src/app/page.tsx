@@ -14,17 +14,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen bg-background">
-      <header className="sticky top-0 bg-background/80 backdrop-blur-sm z-10 border-b">
-        <div className="container mx-auto px-4 h-14 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            {/* Header can be expanded if needed */}
-          </div>
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon"><Share2 className="h-5 w-5" /></Button>
-            <Button variant="ghost" size="icon"><ShoppingCart className="h-5 w-5" /></Button>
-          </div>
-        </div>
-      </header>
+      
 
       <main className="flex-grow pb-24">
         {/* Main Image */}
