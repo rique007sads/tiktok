@@ -1,11 +1,7 @@
 
 'use client';
 
-import { useState } from 'react';
 import Image from 'next/image';
-import { cn } from '@/lib/utils';
-import type { ProductImage } from '@/types';
-import { Card, CardContent } from '@/components/ui/card';
 
 interface ProductImageGalleryProps {
   mainImageUrl: string;

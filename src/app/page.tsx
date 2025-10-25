@@ -1,12 +1,13 @@
 
+'use client';
+
 import { productData } from '@/lib/product-data';
 import type { Product } from '@/types';
 import { Button } from '@/components/ui/button';
-import { Share2, ShoppingCart, MessageSquare, Store, ChevronRight, Ticket, ShieldCheck, Bookmark, Star } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Share2, ShoppingCart, MessageSquare, Store, ChevronRight, Star, Clock, CheckCircle2, Package, RotateCw } from 'lucide-react';
 import Image from 'next/image';
-import { Separator } from '@/components/ui/separator';
+import { OfferTimer } from './components/product/OfferTimer';
+import { CustomerReviews } from './components/product/CustomerReviews';
 
 export default function Home() {
   const product: Product = productData;
@@ -39,116 +40,75 @@ export default function Home() {
         </div>
 
         <div className="container mx-auto px-4 mt-4 space-y-4">
-          {/* Price and discount */}
+          
+          {/* Prices */}
           <div className="flex items-baseline gap-2">
-            <p className="text-sm text-muted-foreground">A partir de</p>
             <p className="text-2xl font-bold text-primary">
-              R$ {product.preco.minimo.toFixed(2).replace('.', ',')}
+              R$ {product.preco.atual.toFixed(2).replace('.', ',')}
             </p>
             <p className="text-lg text-muted-foreground line-through">
-              R$ {product.preco.originalReferencia.toFixed(2).replace('.', ',')}
+              R$ {product.preco.original.toFixed(2).replace('.', ',')}
             </p>
-            <Badge variant="destructive" className="text-base">
-              {product.preco.textoDesconto}
-            </Badge>
           </div>
 
-          {/* Product Name and Favorite */}
-          <div className="flex items-start gap-2">
-            <h1 className="text-lg font-semibold leading-snug flex-1 nome-produto">{product.nome}</h1>
-            {product.acoesTopo.favoritar && <Bookmark className="w-5 h-5 text-muted-foreground mt-1" />}
-          </div>
+          <h1 className="text-lg font-semibold leading-snug flex-1 nome-produto">{product.nome}</h1>
 
-          <p className="text-sm text-muted-foreground">{product.vendidos} vendidos</p>
-          
-           {/* Purchase Warning */}
-          {product.avisosCompra.map((aviso, index) => (
-             <div key={index} className="bg-red-50 p-2 rounded-md flex justify-between items-center">
-                <p className="text-xs text-primary font-medium">{aviso.texto}</p>
-                <Button size="sm" variant="ghost" className="text-primary h-auto p-1">{aviso.botao} <ChevronRight className="h-4 w-4"/></Button>
+          {/* Stats */}
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <div className="flex items-center gap-1">
+              <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
+              <span className="font-semibold">{product.estatisticas.mediaAvaliacao}</span>
             </div>
-          ))}
+            <span>({product.estatisticas.totalAvaliacoes})</span>
+            <span className="h-4 border-l mx-1"></span>
+            <span>{product.estatisticas.totalVendidos} vendidos</span>
+          </div>
 
-          {/* Variations */}
-           <Card>
-              <CardContent className="p-3">
-                <button className="w-full flex items-center justify-between text-sm">
-                    <div className="flex items-center gap-2">
-                        <span className="text-muted-foreground">Opções</span>
-                        <p className="font-semibold">{product.variacoes.textoGeral}</p>
-                    </div>
-                    <div className="flex items-center">
-                        {product.variacoes.opcoes.slice(0, 3).map(v => (
-                            <Image key={v.nome} src={v.urlMiniatura} alt={v.nome} width={24} height={24} className="rounded-sm border -ml-2"/>
-                        ))}
-                        <ChevronRight className="h-5 w-5 text-muted-foreground ml-2" />
-                    </div>
-                </button>
-              </CardContent>
-            </Card>
-
-           {/* Shipping */}
-          <Card>
-            <CardContent className="p-3">
-                 <button className="w-full flex items-center justify-between text-sm">
-                    <div className="flex items-center gap-3">
-                        <span className="font-semibold">{product.logistica.frete.tipo}</span>
-                        <p className="text-muted-foreground">{product.logistica.frete.previsaoEntrega}</p>
-                    </div>
-                    <ChevronRight className="h-5 w-5 text-muted-foreground" />
-                </button>
-            </CardContent>
-          </Card>
-
-          {/* TikTok Shop Services */}
-          <Card>
-            <CardHeader className='p-3 pb-2'>
-              <CardTitle className='text-base'>{product.servicosShop.titulo}</CardTitle>
-            </CardHeader>
-            <CardContent className='p-3 pt-0'>
-              <div className='grid grid-cols-2 gap-x-4 gap-y-1 text-xs text-muted-foreground'>
-                {product.servicosShop.itens.map(item => (
-                  <div key={item} className="flex items-center gap-1.5">
-                    <ShieldCheck className='h-3 w-3 text-green-600'/>
-                    <span>{item}</span>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Offers */}
-          <Card>
-             <CardHeader className='p-3 pb-2'>
-              <CardTitle className='text-base'>{product.secaoOfertas.titulo}</CardTitle>
-            </CardHeader>
-            <CardContent className='p-3 pt-0 space-y-2'>
-              {product.secaoOfertas.cuponsAtivos.map((cupom, i) => (
-                <div key={i} className='flex items-center justify-between'>
-                    <div>
-                        <p className='text-sm font-semibold flex items-center gap-1.5'><Ticket className='h-4 w-4 text-primary'/>{cupom.tipo}</p>
-                        <p className='text-xs text-muted-foreground ml-6'>{cupom.detalhe}</p>
-                    </div>
-                    <Button variant="outline" size="sm">{cupom.botaoTexto}</Button>
+          {/* Flash Offer */}
+          {product.ofertaRelampago.ativa && (
+            <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-3 space-y-2">
+              <div className="flex items-center justify-between">
+                <h2 className="text-lg font-bold text-destructive">Oferta Relâmpago</h2>
+                <div className="flex items-center gap-2 text-destructive">
+                  <Clock className="w-5 h-5" />
+                  <OfferTimer timeString={product.ofertaRelampago.tempoRestante} />
                 </div>
-              ))}
-            </CardContent>
-          </Card>
+              </div>
+              <p className="text-sm font-semibold bg-destructive/20 text-destructive rounded-full px-3 py-1 inline-block">
+                Desconto de {product.ofertaRelampago.descontoPorcentagem}%
+              </p>
+              <p className="text-xs text-muted-foreground">
+                Compre R$ {product.ofertaRelampago.condicaoCompra.minimoRequerido.toFixed(2).replace('.', ',')}, economize R$ {product.ofertaRelampago.condicaoCompra.economiaGanho.toFixed(2).replace('.', ',')}
+              </p>
+            </div>
+          )}
+
+           {/* Shipping & Returns */}
+          <div className="border-t border-b divide-y">
+             <button className="w-full flex items-center justify-between text-sm py-3">
+                <div className="flex items-center gap-3">
+                    <Package className='w-5 h-5 text-muted-foreground'/>
+                    <span className="font-semibold">{product.logistica.frete.tipo}</span>
+                    <p className="text-muted-foreground">{product.logistica.frete.previsaoEntrega}</p>
+                </div>
+                <ChevronRight className="h-5 w-5 text-muted-foreground" />
+            </button>
+            <button className="w-full flex items-center justify-between text-sm py-3">
+                <div className="flex items-center gap-3">
+                    <RotateCw className='w-5 h-5 text-muted-foreground'/>
+                    <span className="font-semibold">{product.logistica.devolucao.tipo}</span>
+                    <p className="text-muted-foreground flex-1 text-left">{product.logistica.devolucao.detalhe}</p>
+                </div>
+                <ChevronRight className="h-5 w-5 text-muted-foreground" />
+            </button>
+          </div>
 
           {/* Reviews */}
-          <Card>
-            <CardHeader className='p-3'>
-              <button className="w-full flex items-center justify-between">
-                <CardTitle className='text-base'>{product.avaliacoes.titulo}</CardTitle>
-                <ChevronRight className="h-5 w-5 text-muted-foreground" />
-              </button>
-            </CardHeader>
-            {product.avaliacoes.total === 0 && (
-              <CardContent className="p-3 pt-0 text-center text-sm text-muted-foreground">
-                Ainda não há avaliações para este produto.
-              </CardContent>
-            )}
-          </Card>
+          <CustomerReviews 
+            reviews={product.comentariosAmostra}
+            totalReviews={product.estatisticas.totalAvaliacoes}
+            averageRating={product.estatisticas.mediaAvaliacao}
+          />
 
         </div>
       </main>
@@ -169,7 +129,7 @@ export default function Home() {
                 <Button variant="outline" className="flex-1 h-12">
                    <ShoppingCart />
                 </Button>
-                <Button className="flex-1 h-12 flex flex-col items-start p-2 leading-tight">
+                <Button className="flex-1 h-12 flex flex-col items-center justify-center p-2 leading-tight">
                     <span className="font-bold text-base">{product.barraAcoesFixa.comprarAgora.texto}</span>
                     <span className="text-xs font-normal opacity-80">{product.barraAcoesFixa.comprarAgora.precoDetalhe}</span>
                 </Button>

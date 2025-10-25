@@ -6,61 +6,55 @@ export interface ProductImage {
   imageHint: string;
 }
 
+export interface ProductReview {
+  autor: string;
+  cidade: string;
+  nota: number;
+  texto: string;
+  fotoUrlComentario?: string | null;
+}
+
 export interface Product {
   nome: string;
-  vendidos: number;
-  acoesTopo: {
-    favoritar: boolean;
+  estatisticas: {
+    mediaAvaliacao: number;
+    totalAvaliacoes: number;
+    totalVendidos: number;
   };
   preco: {
-    minimo: number;
-    originalReferencia: number;
+    atual: number;
+    original: number;
+    economiaPorcentagem: number;
+    textoDetalheFrete: string;
+  };
+  ofertaRelampago: {
+    ativa: boolean;
+    tempoRestante: string;
     descontoPorcentagem: number;
-    textoDesconto: string;
+    condicaoCompra: {
+      minimoRequerido: number;
+      economiaGanho: number;
+    };
   };
-  parcelamento: {
-    parcelas: number;
-    valorParcela: number;
-    juros: string;
-  };
-  avisosCompra: {
-    tipo: string;
-    texto: string;
-    botao: string;
-    acao: string;
-  }[];
   logistica: {
     frete: {
       tipo: string;
       previsaoEntrega: string;
-      taxaEnvio: number;
     };
-  };
-  variacoes: {
-    disponiveis: number;
-    textoGeral: string;
-    opcoes: {
-      nome: string;
-      urlMiniatura: string;
-    }[];
-    acao: string;
-  };
-  servicosShop: {
-    titulo: string;
-    itens: string[];
-  };
-  secaoOfertas: {
-    titulo: string;
-    cuponsAtivos: {
+    devolucao: {
       tipo: string;
       detalhe: string;
-      botaoTexto: string;
-      acao: string;
-    }[];
+    };
   };
-  avaliacoes: {
-    titulo: string;
-    total: number;
+  comentariosAmostra: {
+    autor: string;
+    cidade: string;
+    nota: number;
+    texto: string;
+  }[];
+  imagens: {
+    urlPrincipal: string;
+    miniaturas: string[];
   };
   barraAcoesFixa: {
     loja: { texto: string };
@@ -72,16 +66,4 @@ export interface Product {
       acao: string;
     };
   };
-  imagens: {
-    urlPrincipal: string;
-    miniaturas: string[];
-  };
-}
-
-export interface ProductReview {
-  autor: string;
-  nota: number;
-  cidade: string;
-  texto: string;
-  fotoUrlComentario: string | null;
 }

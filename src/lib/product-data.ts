@@ -1,92 +1,73 @@
 
-import type { Product, ProductImage } from '@/types';
+import type { Product, ProductImage, ProductReview } from '@/types';
 import placeholderData from './placeholder-images.json';
 
 export const productData: Product = {
-  nome: "Papel De Parede Ripado Efeito 3D Cinza Escuro Autocolante Fácil Aplicação",
-  vendidos: 13,
-  acoesTopo: {
-    favoritar: true
+  nome: "Patinete Elétrico Scooter De Alumínio Com Bluetooth 30km/h",
+  estatisticas: {
+    mediaAvaliacao: 4.8,
+    totalAvaliacoes: 892,
+    totalVendidos: 8547
   },
   preco: {
-    minimo: 20.40,
-    originalReferencia: 25.50,
-    descontoPorcentagem: 20,
-    textoDesconto: "-20%"
+    atual: 67.90,
+    original: 619.90,
+    economiaPorcentagem: 85,
+    textoDetalheFrete: "Frete grátis"
   },
-  parcelamento: {
-    parcelas: 4,
-    valorParcela: 5.42,
-    juros: "sem juros"
-  },
-  avisosCompra: [
-    {
-      tipo: "cupom",
-      texto: "Compre R$ 60 e ganhe 3% de desconto",
-      botao: "Compre R",
-      "acao": "ativar_cupom_60"
+  ofertaRelampago: {
+    ativa: true,
+    tempoRestante: "00:06:45",
+    descontoPorcentagem: 90,
+    condicaoCompra: {
+      minimoRequerido: 100.00,
+      economiaGanho: 30.00
     }
-  ],
+  },
   logistica: {
     frete: {
       tipo: "Frete grátis",
-      "previsaoEntrega": "Receba até 27 de out - 1 de nov",
-      taxaEnvio: 9.60
+      previsaoEntrega: "Receba até 22 de out - 25 de out"
+    },
+    devolucao: {
+      tipo: "Devolução grátis",
+      detalhe: "Devoluções gratuitas em 30 dias"
     }
   },
-  variacoes: {
-    disponiveis: 3,
-    textoGeral: "3 opções disponíveis",
-    opcoes: [
-      { "nome": "Cinza Escuro", "urlMiniatura": "https://picsum.photos/seed/wallpaper1/100/100" },
-      { "nome": "Marrom", "urlMiniatura": "https://picsum.photos/seed/wallpaper2/100/100" },
-      { "nome": "Bege", "urlMiniatura": "https://picsum.photos/seed/wallpaper3/100/100" }
-    ],
-    acao: "abrir_seletor_variacao"
-  },
-  servicosShop: {
-    titulo: "Serviços do TikTok Shop",
-    itens: [
-      "Devolução gratuita",
-      "Pagamento seguro",
-      "Reembolso automático por dano",
-      "Cupom por atraso na coleta"
+  comentariosAmostra: [
+    {
+      autor: "Pedro Raul",
+      cidade: "Belo Horizonte, MG",
+      nota: 5,
+      texto: "Excelente meio de transporte para quem almeja não gastar com gasolina e busca praticidade..."
+    },
+    {
+      autor: "Pietro Santos",
+      cidade: "Curitiba, PR",
+      nota: 5,
+      texto: "Esse patinete é excelente!! recomendo demais ele sim pra quem mora a poucos quilômetros..."
+    }
+  ],
+  imagens: {
+    urlPrincipal: "https://picsum.photos/seed/scooter1/600/600",
+    miniaturas: [
+      "https://picsum.photos/seed/scooter2/100/100",
+      "https://picsum.photos/seed/scooter3/100/100",
+      "https://picsum.photos/seed/scooter4/100/100",
+      "https://picsum.photos/seed/scooter5/100/100",
+      "https://picsum.photos/seed/scooter6/100/100",
+      "https://picsum.photos/seed/scooter7/100/100",
     ]
-  },
-  secaoOfertas: {
-    titulo: "Ofertas",
-    cuponsAtivos: [
-      {
-        tipo: "Cupom de envio",
-        detalhe: "Desconto de R$ 20 no frete em pedidos acima de R$ 9",
-        "botaoTexto": "Resgatar",
-        "acao": "resgatar_cupom_frete"
-      },
-      {
-         tipo: "Geral",
-         "detalhe": "10% OFF nos pedidos...",
-         "botaoTexto": "Resgatar",
-         "acao": "resgatar_cupom_10_off"
-      }
-    ]
-  },
-  avaliacoes: {
-    titulo: "Avaliações dos clientes (0)",
-    total: 0
   },
   barraAcoesFixa: {
     loja: { texto: "Loja" },
     chat: { texto: "Chat" },
     carrinhoRapido: { icone: "carrinho", acao: "adicionar_carrinho" },
-    "comprarAgora": {
+    comprarAgora: {
       texto: "Comprar agora",
-      precoDetalhe: "R$ 20,40 | Frete grátis",
+      precoDetalhe: "R$ 67,90 | Frete grátis",
       acao: "checkout_direto"
     }
-  },
-  imagens: {
-    urlPrincipal: "https://picsum.photos/seed/mainwallpaper/600/600",
-    miniaturas: []
   }
 };
 
