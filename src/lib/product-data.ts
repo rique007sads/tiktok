@@ -19,19 +19,19 @@ export const productData: Product = {
   preco: {
     atual: 67.9,
     original: 619.9,
-    economiaPorcentagem: 85,
-    textoEconomia: 'Economize até 85%',
+    economiaPorcentagem: 89,
+    textoEconomia: 'Economize até 89%',
   },
   ofertaRelampago: {
     ativa: true,
     titulo: 'Promo do Mês',
-    tempoRestante: '59:27',
+    tempoRestante: '04:54', // From 294 seconds
   },
   estatisticas: {
-    mediaAvaliacaoClientes: 4.7,
-    totalAvaliacoesClientes: 491,
-    totalAvaliacoesLoja: 207,
-    totalVendidos: 4473,
+    mediaAvaliacaoClientes: 4.8,
+    totalAvaliacoesClientes: 892,
+    totalAvaliacoesLoja: 207, // Keeping old value as it's not in new data.
+    totalVendidos: 8547,
   },
   logistica: {
     frete: {
