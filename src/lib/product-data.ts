@@ -49,7 +49,7 @@ export const productData: Product = {
       { id: "img01", url: "https://i.postimg.cc/Dwtm8RFX/tiktok.webp", tipo: "principal", alt: "Patinete elétrico inteiro" },
       { id: "img02", url: "https://i.postimg.cc/GhvbX913/fototiktok2334ds.webp", tipo: "dobrado", alt: "Patinete elétrico dobrado" },
       { id: "img03", url: "https://i.postimg.cc/ry36XT9z/fototikodso23.webp", tipo: "detalhe", alt: "Detalhe da roda traseira do patinete" },
-      { id: "img04", url: "https://i.postimg.cc/5NfHm95p/Cn-P-24102025-213856.png", tipo: "vista_lateral", alt: "Vista lateral do patinete" },
+      { id: "img04", url: "https://i.postimg.cc/bJvX8NMY/fototiktok.webp", tipo: "vista_lateral", alt: "Vista lateral do patinete" },
       { id: "img05", url: "https://i.postimg.cc/1txXVy5L/Cn-P-24102025-214004.png", tipo: "diagrama", alt: "Diagrama de dimensões do patinete" }
     ]
   },
