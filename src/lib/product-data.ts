@@ -94,7 +94,7 @@ export const productData: Product = {
               nota: 4,
               data: "2023-10-27T10:15:00Z",
               texto: "Gostei bastante, achei que era mais lento mas a velocidade me surpreendeu, no manual diz que vai ate 25 mas claramente da pra ver a velocidade almentando quando chega no limite de 25, deve chegar nos 30, a bateria dura até que bem, recarregamos a cada 3 dias.",
-              fotoUrlComentario: "https://picsum.photos/seed/review2/100/100"
+              fotoUrlComentario: "https://i.postimg.cc/43WHYDHF/Cn-P-24102025-233352.png"
           },
           "comentarioId_PR": {
               autor: "Pedro Raul",
