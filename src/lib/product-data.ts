@@ -46,11 +46,11 @@ export const productData: Product = {
     contadorTotal: 5,
     urlPrincipal: "https://i.postimg.cc/Dwtm8RFX/tiktok.webp",
     galeria: [
-      { id: "img01", url: "https://i.postimg.cc/GhvbX913/fototiktok2334ds.webp", tipo: "principal", alt: "Patinete elétrico inteiro" },
-      { id: "img02", url: "https://i.postimg.cc/XXSDZV2w/fotosd3dwtiktok.webp", tipo: "dobrado", alt: "Patinete elétrico dobrado" },
-      { id: "img03", url: "https://i.postimg.cc/ry36XT9z/fototikodso23.webp", tipo: "detalhe", alt: "Detalhe da roda traseira do patinete" },
-      { id: "img04", url: "https://i.postimg.cc/bJvX8NMY/fototiktok.webp", tipo: "vista_lateral", alt: "Vista lateral do patinete" },
-      { id: "img05", url: "https://i.postimg.cc/XXSDZV2w/fotosd3dwtiktok.webp", tipo: "diagrama", alt: "Diagrama de dimensões do patinete" }
+      { id: "img01", url: "https://i.postimg.cc/GhvbX913/fototiktok2334ds.webp", tipo: "principal", alt: "Máquina de Bolhas em uso" },
+      { id: "img02", url: "https://i.postimg.cc/XXSDZV2w/fotosd3dwtiktok.webp", tipo: "dobrado", alt: "Máquina de bolhas de perto" },
+      { id: "img03", url: "https://i.postimg.cc/ry36XT9z/fototikodso23.webp", tipo: "detalhe", alt: "Criança brincando com bolhas" },
+      { id: "img04", url: "https://i.postimg.cc/bJvX8NMY/fototiktok.webp", tipo: "vista_lateral", alt: "Máquina de bolhas em ambiente externo" },
+      { id: "img05", url: "https://i.postimg.cc/XXSDZV2w/fotosd3dwtiktok.webp", tipo: "diagrama", alt: "Detalhe da máquina de bolhas" }
     ]
   },
   barraAcoesFixa: {
@@ -79,41 +79,50 @@ export const productData: Product = {
           mediaGeral: 4.7
       },
       comentarios: {
-          "comentarioId_CS": {
-              autor: "Carlos Silva",
-              cidade: "São Paulo, SP",
+          "comentarioId_AC": {
+              autor: "Ana Costa",
+              cidade: "Salvador, BA",
               nota: 5,
-              data: "2023-10-27T10:00:00Z",
-              texto: "Comprei pro meu filho ele amou está indo pro trabalho com o patinete fácil fé andar praticidade na hora dd guardar produto excelente e meu filho conseguiu colocar no seguro.",
+              data: "2023-11-05T11:00:00Z",
+              texto: "Comprei para minha filha e ela ficou encantada! A Máquina de Bolhas Automática Elétrica é muito prática, é só ligar que começa a soltar várias bolhinhas. Usamos no aniversário e deixou tudo mais lindo e divertido. Recomendo demais! 🫧💕",
+              fotoUrlComentario: null,
+              fotoUrlAutor: "https://i.postimg.cc/507X9Q8x/avatar-woman-1.png"
+          },
+          "comentarioId_BS": {
+              autor: "Bruno Santos",
+              cidade: "Fortaleza, CE",
+              nota: 5,
+              data: "2023-11-04T15:20:00Z",
+              texto: "Achei que fosse fraca, mas me surpreendeu! As bolhas saem sem parar e fazem um efeito muito bonito. Meu filho corre atrás delas o tempo todo 😂. Leve, fácil de usar e dá pra levar em qualquer lugar.",
               fotoUrlComentario: null,
               fotoUrlAutor: "https://i.postimg.cc/fTx4jXj3/Cn-P-24102025-235201.png"
           },
-          "comentarioId_RL": {
-              autor: "Rafaela Lima",
-              cidade: "Rio de Janeiro, RJ",
+          "comentarioId_CO": {
+              autor: "Carla Oliveira",
+              cidade: "Brasília, DF",
               nota: 4,
-              data: "2023-10-27T10:15:00Z",
-              texto: "Gostei bastante, achei que era mais lento mas a velocidade me surpreendeu, no manual diz que vai ate 25 mas claramente da pra ver a velocidade almentando quando chega no limite de 25, deve chegar nos 30, a bateria dura até que bem, recarregamos a cada 3 dias.",
+              data: "2023-11-03T09:45:00Z",
+              texto: "Gostei bastante! Só não dei 5 estrelas porque queria que viesse com mais líquido, mas nada que atrapalhe. Funciona super bem e as crianças amam. Usei na festa da minha sobrinha e foi sucesso!",
               fotoUrlComentario: null,
               fotoUrlAutor: "https://i.postimg.cc/dtRXTFwr/Cn-P-24102025-235333.png"
           },
-          "comentarioId_PR": {
-              autor: "Pedro Raul",
-              cidade: "Belo Horizonte, MG",
+          "comentarioId_DP": {
+              autor: "Daniel Pereira",
+              cidade: "Porto Alegre, RS",
               nota: 5,
-              data: "2023-10-27T10:30:00Z",
-              texto: "Excelente meio de transporte para quem almeja não gastar com gasolina e busca praticidade, uso para ir ao trabalho e foi uma escolha ótima adquirir o produto!!.",
-              fotoUrlComentario: "https://i.postimg.cc/tg4zJQ4d/Cn-P-24102025-233736.png",
+              data: "2023-11-02T18:00:00Z",
+              texto: "Excelente para deixar o ambiente mais alegre. Uso no quintal nos finais de semana. Ajuda até pra tirar fotos lindas com as crianças 🫧✨. Vale muito a pena, produto ótimo!",
+              fotoUrlComentario: "https://i.postimg.cc/T3N3YgMP/child-bubbles.png",
               fotoUrlAutor: "https://i.postimg.cc/hvWyfyYN/Cn-P-24102025-235423.png"
           },
-          "comentarioId_PS": {
-              autor: "Pietro Santos",
-              cidade: "Curitiba, PR",
+          "comentarioId_FR": {
+              autor: "Fernanda Ribeiro",
+              cidade: "Manaus, AM",
               nota: 5,
-              data: "2023-10-27T10:45:00Z",
-              texto: "Esse patinete é excelente!! recomendo demais ele sim pra quem mora a poucos quilômetros do trabalho em área urbanizada ou até para lazer. A velocidade dele é ideal!! tenho 97 kg e ele alcança sim os 25km/h de boa! parece ser resistente e é discreto. Tem uma ótima frenagem! eu gostei muito dele! uso todo dia!.",
+              data: "2023-11-01T14:10:00Z",
+              texto: "Amei! Eu uso na pracinha com minha filha e outras crianças acabam vindo brincar junto. A máquina funciona direitinho e é super segura. Presente perfeito 🎁💖",
               fotoUrlComentario: null,
-              fotoUrlAutor: "https://i.postimg.cc/JhsPKCCn/Cn-P-24102025-235500.png"
+              fotoUrlAutor: "https://i.postimg.cc/C10RzM9j/avatar-woman-2.png"
           }
       }
     }
