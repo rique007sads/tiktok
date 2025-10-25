@@ -8,16 +8,13 @@ export interface ProductImage {
 
 export interface Product {
   nome: string;
-  marca: string;
-  modelo: string;
-  imagens: {
-    contadorFotos: string;
-    urlPrincipal: string;
-    miniaturas: string[];
+  vendidos: number;
+  acoesTopo: {
+    favoritar: boolean;
   };
   preco: {
-    atual: number;
-    original: number;
+    minimo: number;
+    originalReferencia: number;
     descontoPorcentagem: number;
     textoDesconto: string;
   };
@@ -26,42 +23,61 @@ export interface Product {
     valorParcela: number;
     juros: string;
   };
-  cupom: {
-    ativo: boolean;
+  avisosCompra: {
+    tipo: string;
     texto: string;
+    botao: string;
     acao: string;
-  };
-  estatisticas: {
-    mediaAvaliacao: number;
-    totalAvaliacoes: number;
-    totalVendidos: number;
-  };
-  acoes: {
-    compartilhar: boolean;
-    carrinho: boolean;
-    favoritar: boolean;
-  };
+  }[];
   logistica: {
     frete: {
       tipo: string;
       previsaoEntrega: string;
       taxaEnvio: number;
-      acao: string;
     };
   };
+  variacoes: {
+    disponiveis: number;
+    textoGeral: string;
+    opcoes: {
+      nome: string;
+      urlMiniatura: string;
+    }[];
+    acao: string;
+  };
+  servicosShop: {
+    titulo: string;
+    itens: string[];
+  };
+  secaoOfertas: {
+    titulo: string;
+    cuponsAtivos: {
+      tipo: string;
+      detalhe: string;
+      botaoTexto: string;
+      acao: string;
+    }[];
+  };
+  avaliacoes: {
+    titulo: string;
+    total: number;
+  };
   barraAcoesFixa: {
-    loja: { texto: string; acao: string };
-    chat: { texto: string; acao: string };
-    carrinhoRapido: { icone: string; texto: string; acao: string };
+    loja: { texto: string };
+    chat: { texto: string };
+    carrinhoRapido: { icone: string; acao: string };
     comprarAgora: {
       texto: string;
       precoDetalhe: string;
       acao: string;
     };
   };
+  imagens: {
+    urlPrincipal: string;
+    miniaturas: string[];
+  };
 }
 
-// Keeping review types for potential future use, but they are not in the new product data.
 export interface ProductReview {
   autor: string;
   nota: number;

@@ -1,72 +1,96 @@
 
-import type { Product } from '@/types';
+import type { Product, ProductImage } from '@/types';
+import placeholderData from './placeholder-images.json';
 
 export const productData: Product = {
-  nome: 'Suporte Monitor North Bayou NB F80 Mesa P/ TV/Monitor 17 a 30" com pistão a gás',
-  marca: 'North Bayou',
-  modelo: 'NB F80',
-  imagens: {
-    contadorFotos: '1/6',
-    urlPrincipal: 'suporte_principal',
-    miniaturas: [
-      'suporte_miniatura_1',
-      'suporte_miniatura_2',
-      'suporte_miniatura_3',
-      'suporte_miniatura_4',
-      'suporte_miniatura_5',
-      'suporte_miniatura_6',
-    ],
+  nome: "Papel De Parede Ripado Efeito 3D Cinza Escuro Autocolante Fácil Aplicação",
+  vendidos: 13,
+  acoesTopo: {
+    favoritar: true
   },
   preco: {
-    atual: 124.2,
-    original: 166.0,
-    descontoPorcentagem: 25,
-    textoDesconto: '-25%',
+    minimo: 20.40,
+    originalReferencia: 25.50,
+    descontoPorcentagem: 20,
+    textoDesconto: "-20%"
   },
   parcelamento: {
-    parcelas: 3,
-    valorParcela: 41.4,
-    juros: 'sem juros',
+    parcelas: 4,
+    valorParcela: 5.42,
+    juros: "sem juros"
   },
-  cupom: {
-    ativo: true,
-    texto: 'Desconto de 10%, máximo de R$ 25',
-    acao: 'ver_detalhes_cupom',
-  },
-  estatisticas: {
-    mediaAvaliacao: 3.9,
-    totalAvaliacoes: 25,
-    totalVendidos: 218,
-  },
-  acoes: {
-    compartilhar: true,
-    carrinho: true,
-    favoritar: true,
-  },
+  avisosCompra: [
+    {
+      tipo: "cupom",
+      texto: "Compre R$ 60 e ganhe 3% de desconto",
+      botao: "Compre R",
+      "acao": "ativar_cupom_60"
+    }
+  ],
   logistica: {
     frete: {
-      tipo: 'Frete grátis',
-      previsaoEntrega: 'Receba até 27 de out - 1 de nov',
-      taxaEnvio: 9.6,
-      acao: 'ver_detalhes_frete',
-    },
+      tipo: "Frete grátis",
+      "previsaoEntrega": "Receba até 27 de out - 1 de nov",
+      taxaEnvio: 9.60
+    }
+  },
+  variacoes: {
+    disponiveis: 3,
+    textoGeral: "3 opções disponíveis",
+    opcoes: [
+      { "nome": "Cinza Escuro", "urlMiniatura": "https://picsum.photos/seed/wallpaper1/100/100" },
+      { "nome": "Marrom", "urlMiniatura": "https://picsum.photos/seed/wallpaper2/100/100" },
+      { "nome": "Bege", "urlMiniatura": "https://picsum.photos/seed/wallpaper3/100/100" }
+    ],
+    acao: "abrir_seletor_variacao"
+  },
+  servicosShop: {
+    titulo: "Serviços do TikTok Shop",
+    itens: [
+      "Devolução gratuita",
+      "Pagamento seguro",
+      "Reembolso automático por dano",
+      "Cupom por atraso na coleta"
+    ]
+  },
+  secaoOfertas: {
+    titulo: "Ofertas",
+    cuponsAtivos: [
+      {
+        tipo: "Cupom de envio",
+        detalhe: "Desconto de R$ 20 no frete em pedidos acima de R$ 9",
+        "botaoTexto": "Resgatar",
+        "acao": "resgatar_cupom_frete"
+      },
+      {
+         tipo: "Geral",
+         "detalhe": "10% OFF nos pedidos...",
+         "botaoTexto": "Resgatar",
+         "acao": "resgatar_cupom_10_off"
+      }
+    ]
+  },
+  avaliacoes: {
+    titulo: "Avaliações dos clientes (0)",
+    total: 0
   },
   barraAcoesFixa: {
-    loja: { texto: 'Loja', acao: 'navegar_loja' },
-    chat: { texto: 'Chat', acao: 'abrir_chat' },
-    carrinhoRapido: { icone: 'carrinho', texto: '', acao: 'adicionar_carrinho' },
-    comprarAgora: {
-      texto: 'Comprar agora',
-      precoDetalhe: 'R$ 124,20 | Frete grátis',
-      acao: 'checkout_direto',
-    },
+    loja: { texto: "Loja" },
+    chat: { texto: "Chat" },
+    carrinhoRapido: { icone: "carrinho", acao: "adicionar_carrinho" },
+    "comprarAgora": {
+      texto: "Comprar agora",
+      precoDetalhe: "R$ 20,40 | Frete grátis",
+      acao: "checkout_direto"
+    }
   },
+  imagens: {
+    urlPrincipal: "https://picsum.photos/seed/mainwallpaper/600/600",
+    miniaturas: []
+  }
 };
 
-import imageData from './placeholder-images.json';
-import type { ProductImage } from '@/types';
-
-const imagePlaceholders: ProductImage[] = imageData.placeholderImages;
+const imagePlaceholders: ProductImage[] = placeholderData.placeholderImages;
 
 export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
   (acc, img) => {
