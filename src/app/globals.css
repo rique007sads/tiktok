@@ -90,7 +90,8 @@
     display: flex;
     overflow-x: auto;
     gap: 8px;
-    padding: 10px 16px;
+    padding-left: 16px;
+    padding-right: 16px; 
     flex-wrap: nowrap;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
@@ -111,3 +112,4 @@
 .miniatura-item.ativa {
     border: 2px solid #F84F66;
 }
+
