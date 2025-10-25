@@ -8,7 +8,7 @@ export const productData: Product = {
     nome: "NextWheel Store",
     urlIconeVerificacao: ""
   },
-  nome: "Patinete Elétrico Scooter De Alumínio Com Bluetooth 30km/h",
+  nome: "Máquina de Bolhas Automática Elétrica – diversão garantida para crianças e família! Basta ligar que ela começa a soltar centenas de bolhas coloridas por minuto, criando um ambiente mágico e divertido instantaneamente.",
   marca: "Foston",
   modelo: "FS-S09 Pro",
   estatisticas: {
