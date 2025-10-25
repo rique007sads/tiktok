@@ -48,7 +48,7 @@ export const productData: Product = {
     galeria: [
       { id: "img01", url: "https://i.postimg.cc/Dwtm8RFX/tiktok.webp", tipo: "principal", alt: "Patinete elétrico inteiro" },
       { id: "img02", url: "https://i.postimg.cc/GhvbX913/fototiktok2334ds.webp", tipo: "dobrado", alt: "Patinete elétrico dobrado" },
-      { id: "img03", url: "https://i.postimg.cc/TPgHGcyW/Cn-P-24102025-232753.png", tipo: "detalhe", alt: "Detalhe da roda traseira do patinete" },
+      { id: "img03", url: "https://i.postimg.cc/ry36XT9z/fototikodso23.webp", tipo: "detalhe", alt: "Detalhe da roda traseira do patinete" },
       { id: "img04", url: "https://i.postimg.cc/5NfHm95p/Cn-P-24102025-213856.png", tipo: "vista_lateral", alt: "Vista lateral do patinete" },
       { id: "img05", url: "https://i.postimg.cc/1txXVy5L/Cn-P-24102025-214004.png", tipo: "diagrama", alt: "Diagrama de dimensões do patinete" }
     ]
@@ -167,7 +167,7 @@ export const storeData: Store = {
     {
       titulo: "Suporte ao cliente",
       conteudo: "",
-      acao: "expandir_ou_navegar"
+acao: "expandir_ou_navegar"
     },
     {
       titulo: "Políticas e aspectos legais",
