@@ -86,31 +86,28 @@
     color: white;
 }
 
-/* Container que armazena todas as miniaturas */
 .galeria-miniaturas {
     display: flex;
-    overflow-x: auto; /* Permite a rolagem horizontal */
-    padding: 10px 0; /* Espaçamento vertical para não encostar na borda */
-    gap: 12px; /* Espaçamento entre as miniaturas */
-    -webkit-overflow-scrolling: touch; /* Melhor rolagem em dispositivos iOS */
-    /* Esconde a barra de rolagem nativa, se desejar */
-    scrollbar-width: none; 
+    overflow-x: auto;
+    gap: 8px;
+    padding: 10px 16px;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
 }
 
 .galeria-miniaturas::-webkit-scrollbar {
   display: none;
 }
 
-/* Estilo individual de cada miniatura */
 .miniatura-item {
-    flex-shrink: 0; /* Impede que as imagens encolham */
-    width: 65px; /* Tamanho fixo */
+    flex-shrink: 0;
+    width: 65px;
     height: 65px;
-    border-radius: 8px; /* Cantos arredondados */
+    border-radius: 8px;
     border: 2px solid transparent;
 }
 
-/* Estilo para a miniatura ATIVA */
 .miniatura-item.ativa {
-    border: 2px solid #F84F66; /* Borda de destaque (cor do botão Comprar Agora) */
+    border: 2px solid #F84F66;
 }
