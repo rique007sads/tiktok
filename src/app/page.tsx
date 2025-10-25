@@ -55,7 +55,7 @@ export default function Home() {
 
           {/* Product Name and Favorite */}
           <div className="flex items-start gap-2">
-            <h1 className="text-lg font-semibold leading-snug flex-1">{product.nome}</h1>
+            <h1 className="text-lg font-semibold leading-snug flex-1 nome-produto">{product.nome}</h1>
             {product.acoesTopo.favoritar && <Bookmark className="w-5 h-5 text-muted-foreground mt-1" />}
           </div>
 
@@ -169,7 +169,7 @@ export default function Home() {
                 <Button variant="outline" className="flex-1 h-12">
                    <ShoppingCart />
                 </Button>
-                <Button className="flex-1 h-12 flex flex-col items-start p-2">
+                <Button className="flex-1 h-12 flex flex-col items-start p-2 leading-tight">
                     <span className="font-bold text-base">{product.barraAcoesFixa.comprarAgora.texto}</span>
                     <span className="text-xs font-normal opacity-80">{product.barraAcoesFixa.comprarAgora.precoDetalhe}</span>
                 </Button>
