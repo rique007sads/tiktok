@@ -84,17 +84,56 @@
 .botao-comprar-agora {
     background-color: #F84F66;
     color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 8px 15px; /* Ajuste o padding geral para controle */
+    
+    /* PROPRIEDADES CHAVE DE ALINHAMENTO */
+    display: flex;
+    flex-direction: column; /* Coloca os itens em coluna */
+    align-items: center; /* Centraliza tudo horizontalmente */
+    justify-content: center; /* Centraliza tudo verticalmente (se houver espaço) */
+    text-align: center;
+    line-height: 1.1; /* Reduz a altura da linha para aproximar as palavras */
 }
 
+.texto-acao-principal { /* O texto 'Comprar agora' */
+    font-size: 18px; 
+    font-weight: 700;
+    /* Remova qualquer margin-bottom que possa estar separando do preço */
+    margin-bottom: 0px; 
+}
+
+.detalhe-preco-frete { /* O texto 'R$ 67,90 | Frete grátis' */
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.9; /* Deixe ligeiramente mais claro para contraste */
+    /* Remova qualquer margin-top */
+    margin-top: 2px; /* Adiciona apenas um pequeno espaço vertical se necessário */
+}
+
+/* Container que armazena todas as miniaturas */
 .galeria-miniaturas {
     display: flex;
-    overflow-x: auto;
-    gap: 8px;
-    padding-left: 16px;
-    padding-right: 16px; 
-    flex-wrap: nowrap;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    overflow-x: auto; /* Mantém a rolagem arrastável */
+    gap: 8px; 
+    
+    /* Padding padrão para as laterais (para não encostar na borda) */
+    padding-left: 16px; 
+    
+    /* SOLUÇÃO CHAVE: Adiciona espaço extra à direita. 
+     * Espaço extra = Largura da miniatura (65px) + Espaçamento (8px) + Padding lateral (16px) 
+     * 65 + 8 + 16 = 89px
+     */
+    padding-right: 89px; 
+    
+    /* Se a barra de rolagem estiver visível, ajuste a altura do padding inferior */
+    padding-bottom: 10px;
+    
+    flex-wrap: nowrap; 
+    -webkit-overflow-scrolling: touch; 
+    scrollbar-width: none; 
 }
 
 .galeria-miniaturas::-webkit-scrollbar {
@@ -112,4 +151,3 @@
 .miniatura-item.ativa {
     border: 2px solid #F84F66;
 }
-

@@ -121,9 +121,9 @@ export default function Home() {
                 <Button variant="outline" className="flex-1 h-12">
                    <ShoppingCart />
                 </Button>
-                <Button className="flex-1 h-12 flex flex-col items-center justify-center p-2 leading-tight botao-comprar-agora">
-                    <span className="font-bold text-base">{product.barraAcoesFixa.comprarAgora.texto}</span>
-                    <span className="text-xs font-normal opacity-80">{product.barraAcoesFixa.comprarAgora.precoDetalhe}</span>
+                <Button className="flex-1 h-12 botao-comprar-agora">
+                    <span className="texto-acao-principal">{product.barraAcoesFixa.comprarAgora.texto}</span>
+                    <span className="detalhe-preco-frete">{product.barraAcoesFixa.comprarAgora.precoDetalhe}</span>
                 </Button>
             </div>
         </div>
@@ -131,5 +131,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
