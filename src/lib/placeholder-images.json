@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "patinete_principal",
+      "description": "Electric scooter main view",
+      "imageUrl": "https://images.unsplash.com/photo-1655101336147-10b23f1226ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxlbGVjdHJpYyUyMHNjb290ZXJ8ZW58MHx8fHwxNzYxMzM0NTY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "electric scooter"
+    },
+    {
+      "id": "miniatura_1",
+      "description": "Electric scooter thumbnail 1",
+      "imageUrl": "https://images.unsplash.com/photo-1617906647113-0b8b7f262c6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlbGVjdHJpYyUyMHNjb290ZXJ8ZW58MHx8fHwxNzYxMzM0NTY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "electric scooter"
+    },
+    {
+      "id": "miniatura_2",
+      "description": "Electric scooter thumbnail 2",
+      "imageUrl": "https://images.unsplash.com/photo-1717849467867-3b28cf6bc7a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzY29vdGVyJTIwZGV0YWlsc3xlbnwwfHx8fDE3NjEzNTU4MDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scooter details"
+    },
+    {
+      "id": "miniatura_3",
+      "description": "Electric scooter thumbnail 3",
+      "imageUrl": "https://images.unsplash.com/photo-1622890950086-a3f32dd2596b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzY29vdGVyJTIwd2hlZWx8ZW58MHx8fHwxNzYxMzU1MDczfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scooter wheel"
+    },
+    {
+      "id": "miniatura_4",
+      "description": "Electric scooter thumbnail 4",
+      "imageUrl": "https://images.unsplash.com/photo-1523224818356-ca48ca49eb75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzY29vdGVyJTIwaGFuZGxlYmFyfGVufDB8fHx8MTc2MTM1NTgwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scooter handlebar"
+    },
+    {
+      "id": "miniatura_5",
+      "description": "Electric scooter thumbnail 5",
+      "imageUrl": "https://images.unsplash.com/photo-1604125164766-33ef65d7d625?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmb2xkZWQlMjBzY29vdGVyfGVufDB8fHx8MTc2MTM1NTgwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "folded scooter"
+    },
+    {
+      "id": "miniatura_6",
+      "description": "Electric scooter thumbnail 6",
+      "imageUrl": "https://images.unsplash.com/photo-1665581296341-cc1861aa154f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY29vdGVyJTIwbGlnaHR8ZW58MHx8fHwxNzYxMzU1ODAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scooter light"
+    },
+    {
+      "id": "carlos_silva_review",
+      "description": "Review photo from Carlos Silva",
+      "imageUrl": "https://images.unsplash.com/photo-1761169331195-e079523673c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBzY29vdGVyfGVufDB8fHx8MTc2MTM1NTgwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person scooter"
+    },
+    {
+      "id": "pietro_santos_review",
+      "description": "Review photo from Pietro Santos",
+      "imageUrl": "https://images.unsplash.com/photo-1640350409225-3023f520992b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzY29vdGVyJTIwY2l0eXxlbnwwfHx8fDE3NjEzMDgxMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scooter city"
+    }
+  ]
 }
