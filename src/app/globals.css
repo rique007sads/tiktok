@@ -82,35 +82,40 @@
 }
 
 .botao-comprar-agora {
-    background-color: #F84F66;
+    background-color: #F84F66; 
     color: white;
     font-weight: bold;
     border: none;
-    border-radius: 8px; /* Cantos arredondados */
-    padding: 8px 15px; /* Ajuste o padding geral para controle */
-    
-    /* PROPRIEDADES CHAVE DE ALINHAMENTO */
+    border-radius: 8px; 
+
+    /* PROPRIEDADES FLEXBOX DE CENTRALIZAÇÃO VERTICAL E HORIZONTAL */
     display: flex;
-    flex-direction: column; /* Coloca os itens em coluna */
-    align-items: center; /* Centraliza tudo horizontalmente */
-    justify-content: center; /* Centraliza tudo verticalmente (se houver espaço) */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; /* CHAVE: Centraliza o conteúdo dentro da altura do botão */
+
+    /* AJUSTE CHAVE: Padding vertical compactado. */
+    /* Este padding controla o espaço em branco total dentro do botão. */
+    padding: 8px 15px; 
+    
+    /* Garante que o texto se alinhe bem */
     text-align: center;
-    line-height: 1.1; /* Reduz a altura da linha para aproximar as palavras */
 }
 
 .texto-acao-principal { /* O texto 'Comprar agora' */
     font-size: 18px; 
     font-weight: 700;
-    /* Remova qualquer margin-bottom que possa estar separando do preço */
+    line-height: 1.0; /* Minimiza a altura da linha */
     margin-bottom: 0px; 
 }
 
 .detalhe-preco-frete { /* O texto 'R$ 67,90 | Frete grátis' */
     font-size: 12px;
     font-weight: 500;
-    opacity: 0.9; /* Deixe ligeiramente mais claro para contraste */
-    /* Remova qualquer margin-top */
-    margin-top: 2px; /* Adiciona apenas um pequeno espaço vertical se necessário */
+    opacity: 0.9; 
+    /* AJUSTE CHAVE: Usa margin-top muito pequeno ou zero para grudar no topo */
+    margin-top: 2px; 
+    line-height: 1.0; /* Minimiza a altura da linha */
 }
 
 /* Container que armazena todas as miniaturas */
