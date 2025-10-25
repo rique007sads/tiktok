@@ -152,7 +152,7 @@ export const storeData: Store = {
   slogan: "Shop",
   statusVerificacao: {
     verificada: true,
-    plataforma: "Mercado Livre"
+    plataforma: "TikTok Shop"
   },
   urlLogo: "https://i.postimg.cc/X7tZFKJG/Cn-P-24102025-232009.png",
   menusRodape: [
