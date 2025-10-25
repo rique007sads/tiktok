@@ -46,8 +46,8 @@ export const productData: Product = {
     contadorTotal: 5,
     urlPrincipal: "https://i.postimg.cc/Dwtm8RFX/tiktok.webp",
     galeria: [
-      { id: "img01", url: "https://i.postimg.cc/Dwtm8RFX/tiktok.webp", tipo: "principal", alt: "Patinete elétrico inteiro" },
-      { id: "img02", url: "https://i.postimg.cc/GhvbX913/fototiktok2334ds.webp", tipo: "dobrado", alt: "Patinete elétrico dobrado" },
+      { id: "img01", url: "https://i.postimg.cc/GhvbX913/fototiktok2334ds.webp", tipo: "principal", alt: "Patinete elétrico inteiro" },
+      { id: "img02", url: "https://i.postimg.cc/XXSDZV2w/fotosd3dwtiktok.webp", tipo: "dobrado", alt: "Patinete elétrico dobrado" },
       { id: "img03", url: "https://i.postimg.cc/ry36XT9z/fototikodso23.webp", tipo: "detalhe", alt: "Detalhe da roda traseira do patinete" },
       { id: "img04", url: "https://i.postimg.cc/bJvX8NMY/fototiktok.webp", tipo: "vista_lateral", alt: "Vista lateral do patinete" },
       { id: "img05", url: "https://i.postimg.cc/XXSDZV2w/fotosd3dwtiktok.webp", tipo: "diagrama", alt: "Diagrama de dimensões do patinete" }
@@ -68,7 +68,7 @@ export const productData: Product = {
     resumoProduto: "A opção perfeita para transformar qualquer momento em diversão mágica!",
     diferenciais: [
       "Funciona automaticamente – é só ligar!",
-      "Milhares de bolhas coloridas por minuto ✨",
+      "Milhares de bolhas coloridas por minuto",
       "Segura e fácil para crianças",
       "Ideal para presentes, festas e brincadeiras"
     ],
@@ -190,4 +190,6 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
 
 
     
+    
+
     
