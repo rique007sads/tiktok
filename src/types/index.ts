@@ -14,6 +14,13 @@ export interface ProductReview {
   fotoUrlComentario?: string | null;
 }
 
+export interface GalleryImage {
+  id: string;
+  url: string;
+  tipo: string;
+  alt: string;
+}
+
 export interface Product {
   nome: string;
   estatisticas: {
@@ -53,8 +60,10 @@ export interface Product {
     texto: string;
   }[];
   imagens: {
+    contadorAtual: number;
+    contadorTotal: number;
     urlPrincipal: string;
-    miniaturas: string[];
+    galeria: GalleryImage[];
   };
   barraAcoesFixa: {
     loja: { texto: string };

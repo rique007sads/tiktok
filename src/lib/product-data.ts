@@ -1,4 +1,3 @@
-
 import type { Product, ProductImage, ProductReview } from '@/types';
 import placeholderData from './placeholder-images.json';
 
@@ -49,14 +48,16 @@ export const productData: Product = {
     }
   ],
   imagens: {
+    contadorAtual: 1,
+    contadorTotal: 6,
     urlPrincipal: "https://picsum.photos/seed/scooter1/600/600",
-    miniaturas: [
-      "https://picsum.photos/seed/scooter2/100/100",
-      "https://picsum.photos/seed/scooter3/100/100",
-      "https://picsum.photos/seed/scooter4/100/100",
-      "https://picsum.photos/seed/scooter5/100/100",
-      "https://picsum.photos/seed/scooter6/100/100",
-      "https://picsum.photos/seed/scooter7/100/100",
+    galeria: [
+      { id: "img01", url: "https://picsum.photos/seed/scooter1/600/600", tipo: "principal", alt: "Patinete elétrico inteiro" },
+      { id: "img02", url: "https://picsum.photos/seed/scooter2/600/600", tipo: "dobrado", alt: "Patinete elétrico dobrado" },
+      { id: "img03", url: "https://picsum.photos/seed/scooter3/600/600", tipo: "detalhe", alt: "Detalhe da roda traseira do patinete" },
+      { id: "img04", url: "https://picsum.photos/seed/scooter4/600/600", tipo: "vista_lateral", alt: "Vista lateral do patinete" },
+      { id: "img05", url: "https://picsum.photos/seed/scooter5/600/600", tipo: "diagrama", alt: "Diagrama de dimensões do patinete" },
+      { id: "img06", url: "https://picsum.photos/seed/scooter6/600/600", tipo: "cenario", alt: "Patinete elétrico carregando" }
     ]
   },
   barraAcoesFixa: {

@@ -8,6 +8,7 @@ import { Share2, ShoppingCart, MessageSquare, Store, ChevronRight, Star, Clock, 
 import Image from 'next/image';
 import { OfferTimer } from './components/product/OfferTimer';
 import { CustomerReviews } from './components/product/CustomerReviews';
+import { ProductImageGallery } from './components/product/ProductImageGallery';
 
 export default function Home() {
   const product: Product = productData;
@@ -17,17 +18,7 @@ export default function Home() {
       
 
       <main className="flex-grow pb-24">
-        {/* Main Image */}
-        <div className="aspect-square relative bg-card">
-          <Image
-            src={product.imagens.urlPrincipal}
-            alt={product.nome}
-            fill
-            className="object-cover"
-            sizes="100vw"
-            priority
-          />
-        </div>
+        <ProductImageGallery images={product.imagens.galeria} productName={product.nome} />
 
         <div className="container mx-auto px-4 mt-4 space-y-4">
           
