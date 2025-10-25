@@ -129,16 +129,16 @@ export const productData: Product = {
   },
   descricao: {
     titulo: "Descrição",
-    textoPrincipal: "A escolha ideal para transformar qualquer momento em diversão! Basta ligar e a máquina começa a criar centenas de bolhas por minuto. As crianças ficam encantadas vendo o ambiente se encher de bolhinhas! \nPerfeita para festas, aniversários e brincadeiras no dia a dia.",
-    textoCompleto: "Com design portátil e leve, a máquina é fácil de transportar e usar. Não precisa assoprar, não faz sujeira e é segura para crianças. Ideal para usar no quintal, na sala, no parque ou em ambientes externos.\nA chuva de bolhinhas cria uma atmosfera mágica e alegre. As crianças amam correr e estourar bolhas, e os adultos também! Um presente que garante sorrisos, fotos lindas e horas de entretenimento.",
+    textoPrincipal: "Presente Perfeito para Crianças \n\n• Máquina de Bolhas Automática Elétrica:\nA escolha ideal para transformar qualquer momento em diversão! Basta ligar e a máquina começa a criar centenas de bolhas por minuto. As crianças ficam encantadas vendo o ambiente se encher de bolhinhas! \nPerfeita para festas, aniversários e brincadeiras no dia a dia.",
+    textoCompleto: "• Funcionamento Prático e Seguro:\nCom design portátil e leve, a máquina é fácil de transportar e usar. Não precisa assoprar, não faz sujeira e é segura para crianças. Ideal para usar no quintal, na sala, no parque ou em ambientes externos.\n\n• Diversão Garantida:\nA chuva de bolhinhas cria uma atmosfera mágica e alegre. As crianças amam correr e estourar bolhas, e os adultos também! Um presente que garante sorrisos, fotos lindas e horas de entretenimento.",
     fichaTecnica: {
-      "NomeDoProduto": "Máquina de Bolhas Automática Elétrica",
-      "Alimentacao": "Pode variar por modelo: USB / Pilhas / Bateria Recarregável",
+      "Nome do Produto": "Máquina de Bolhas Automática Elétrica",
+      "Alimentação": "Pode variar por modelo: USB / Pilhas / Bateria Recarregável",
       "Material": "Plástico ABS resistente e seguro para crianças",
       "Uso": "Infantil / Festas / Brincadeiras Internas e Externas",
-      "ProducaoDeBolhas": "Alto volume (vários furos que liberam bolhas contínuas)",
+      "Produção de Bolhas": "Alto volume (vários furos que liberam bolhas contínuas)",
       "Portabilidade": "Leve e fácil de transportar",
-      "IdadeRecomendada": "3 anos ou mais"
+      "Idade Recomendada": "3 anos ou mais"
     },
     dicasDeUso: [
       "Use líquido próprio para bolhas para melhor resultado (misturas caseiras também funcionam)",
@@ -158,7 +158,7 @@ export const storeData: Store = {
     verificada: true,
     plataforma: "TikTok Shop"
   },
-  urlLogo: "https://i.postimg.cc/QM0rPnm6/one-person-young-adult-latin-woman-25-years-old-sunset-hair-wind-adult-women-smiling-outdoors-F10003.jpg",
+  urlLogo: "https://i.postimg.cc/mZ3K6nr2/cf6b1864872cdd7d0b1f27f0bf831a47.jpg",
   menusRodape: [
     {
       titulo: "Informações da empresa",
@@ -196,5 +196,6 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
     
 
     
+
 
 
