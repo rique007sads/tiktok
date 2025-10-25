@@ -1,32 +1,47 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Star, ChevronRight, CheckCircle } from 'lucide-react';
+import { Star } from 'lucide-react';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
-import type { ProductReview } from '@/types';
 
-interface CustomerReviewsProps {
-  reviews: Omit<ProductReview, 'fotoUrlComentario'>[];
-  totalReviews: number;
-  averageRating: number;
+interface Review {
+    autor: string;
+    cidade: string;
+    nota: number;
+    texto: string;
 }
 
-export function CustomerReviews({ reviews, totalReviews, averageRating }: CustomerReviewsProps) {
+interface CustomerReviewsProps {
+  reviews: Review[];
+  totalReviews: number;
+  averageRating: number;
+  title: string;
+}
+
+export function CustomerReviews({ reviews, totalReviews, averageRating, title }: CustomerReviewsProps) {
   return (
     <Card>
       <CardHeader className="p-3">
-        <button className="w-full flex items-center justify-between">
-          <CardTitle className="text-base flex items-center gap-2">
-            <span>Avaliações dos clientes ({totalReviews})</span>
-            <div className="flex items-center gap-1 text-sm">
-                <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
-                <span>{averageRating}</span>
-            </div>
-          </CardTitle>
-          <ChevronRight className="h-5 w-5 text-muted-foreground" />
-        </button>
+        <CardTitle className="text-base flex items-center gap-2">
+            <span>{title} ({totalReviews})</span>
+        </CardTitle>
       </CardHeader>
       <CardContent className="p-3 pt-0 space-y-4">
+        <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1 text-yellow-500">
+                <span className="text-2xl font-bold">{averageRating}</span>
+                <span className="text-sm">/5</span>
+            </div>
+            <div className='flex'>
+                {[...Array(5)].map((_, i) => (
+                    <Star
+                    key={i}
+                    className={`w-4 h-4 ${i < Math.floor(averageRating) ? 'text-yellow-500 fill-yellow-500' : 'text-muted-foreground/30'}`}
+                    />
+                ))}
+            </div>
+        </div>
+
         {reviews.map((review, index) => (
           <div key={index} className="space-y-2">
             <div className="flex items-center gap-2">

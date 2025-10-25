@@ -4,12 +4,13 @@
 import { productData } from '@/lib/product-data';
 import type { Product } from '@/types';
 import { Button } from '@/components/ui/button';
-import { Share2, ShoppingCart, MessageSquare, Store, ChevronRight, Star, Clock, Package, RotateCw } from 'lucide-react';
-import Image from 'next/image';
+import { MessageSquare, Store, ChevronRight, Star, Clock, Package, RotateCw, ShoppingCart } from 'lucide-react';
 import { OfferTimer } from './components/product/OfferTimer';
-import { CustomerReviews } from './components/product/CustomerReviews';
 import { ProductImageGallery } from './components/product/ProductImageGallery';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ProductOverview } from './components/product/ProductOverview';
 import { ProductDescription } from './components/product/ProductDescription';
+
 
 export default function Home() {
   const product: Product = productData;
@@ -84,15 +85,18 @@ export default function Home() {
             </button>
           </div>
           
-          {/* Product Description */}
-          <ProductDescription product={product} />
-
-          {/* Reviews */}
-          <CustomerReviews 
-            reviews={product.comentariosAmostra}
-            totalReviews={product.estatisticas.totalAvaliacoes}
-            averageRating={product.estatisticas.mediaAvaliacao}
-          />
+          <Tabs defaultValue="overview" className="w-full">
+            <TabsList className="grid w-full grid-cols-2">
+              <TabsTrigger value="overview">{product.visaoGeral.titulo}</TabsTrigger>
+              <TabsTrigger value="description">{product.descricao.titulo}</TabsTrigger>
+            </TabsList>
+            <TabsContent value="overview">
+              <ProductOverview product={product} />
+            </TabsContent>
+            <TabsContent value="description">
+              <ProductDescription product={product} />
+            </TabsContent>
+          </Tabs>
 
         </div>
       </main>

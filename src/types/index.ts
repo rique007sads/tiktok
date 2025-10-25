@@ -77,13 +77,37 @@ export interface Product {
       acao: string;
     };
   };
-  descricao?: {
-    resumo: string;
-    detalhes: string[];
+  visaoGeral: {
+    titulo: string;
+    resumoProduto: string;
+    diferenciais: string[];
+    avaliacoes: {
+        tituloSecao: string;
+        estatisticas: {
+            mediaAvaliacao: number;
+            totalAvaliacoes: number;
+            totalVendidos: number;
+        };
+        resumoPorEstrela: {
+            '5estrelas': number;
+            '4estrelas': number;
+        };
+        comentariosAmostra: {
+            [key: string]: {
+                autor: string;
+                cidade: string;
+                nota: number;
+                texto: string;
+            }
+        }
+    }
   };
-  diferenciais?: string[];
-  fichaTecnica?: Record<string, string | string[]>;
-  dicasDeUso?: string[];
-  garantiasLoja?: string[];
-  avisoLegal?: string;
+  descricao: {
+    titulo: string;
+    textoPrincipal: string;
+    textoCompleto: string;
+    fichaTecnica: Record<string, string | string[]>;
+    dicasDeUso: string[];
+    avisoLegal: string;
+  }
 }
