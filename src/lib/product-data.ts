@@ -44,9 +44,9 @@ export const productData: Product = {
   imagens: {
     contadorAtual: 1,
     contadorTotal: 6,
-    urlPrincipal: "https://picsum.photos/seed/scooter1/600/600",
+    urlPrincipal: "https://i.postimg.cc/Gh4jj2hv/Cn-P-24102025-212743.png",
     galeria: [
-      { id: "img01", url: "https://picsum.photos/seed/scooter1/600/600", tipo: "principal", alt: "Patinete elétrico inteiro" },
+      { id: "img01", url: "https://i.postimg.cc/Gh4jj2hv/Cn-P-24102025-212743.png", tipo: "principal", alt: "Patinete elétrico inteiro" },
       { id: "img02", url: "https://picsum.photos/seed/scooter2/600/600", tipo: "dobrado", alt: "Patinete elétrico dobrado" },
       { id: "img03", url: "https://picsum.photos/seed/scooter3/600/600", tipo: "detalhe", alt: "Detalhe da roda traseira do patinete" },
       { id: "img04", url: "https://picsum.photos/seed/scooter4/600/600", tipo: "vista_lateral", alt: "Vista lateral do patinete" },
