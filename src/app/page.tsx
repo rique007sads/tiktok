@@ -4,7 +4,7 @@
 import { productData } from '@/lib/product-data';
 import type { Product } from '@/types';
 import { Button } from '@/components/ui/button';
-import { Share2, ShoppingCart, MessageSquare, Store, ChevronRight, Star, Clock, CheckCircle2, Package, RotateCw } from 'lucide-react';
+import { Share2, ShoppingCart, MessageSquare, Store, ChevronRight, Star, Clock, Package, RotateCw } from 'lucide-react';
 import Image from 'next/image';
 import { OfferTimer } from './components/product/OfferTimer';
 import { CustomerReviews } from './components/product/CustomerReviews';
@@ -129,7 +129,7 @@ export default function Home() {
                 <Button variant="outline" className="flex-1 h-12">
                    <ShoppingCart />
                 </Button>
-                <Button className="flex-1 h-12 flex flex-col items-center justify-center p-2 leading-tight">
+                <Button className="flex-1 h-12 flex flex-col items-center justify-center p-2 leading-tight botao-comprar-agora">
                     <span className="font-bold text-base">{product.barraAcoesFixa.comprarAgora.texto}</span>
                     <span className="text-xs font-normal opacity-80">{product.barraAcoesFixa.comprarAgora.precoDetalhe}</span>
                 </Button>
