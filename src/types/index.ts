@@ -31,6 +31,11 @@ interface Comentario {
 }
 
 export interface Product {
+  idLoja: string;
+  vendedor: {
+    nome: string;
+    urlIconeVerificacao: string;
+  };
   nome: string;
   marca?: string;
   modelo?: string;

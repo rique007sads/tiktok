@@ -3,6 +3,11 @@ import type { Product, ProductImage, Store } from '@/types';
 import placeholderData from './placeholder-images.json';
 
 export const productData: Product = {
+  idLoja: "techMobilityBrasil",
+  vendedor: {
+    nome: "Tech Mobility Brasil",
+    urlIconeVerificacao: ""
+  },
   nome: "Patinete Elétrico Scooter De Alumínio Com Bluetooth 30km/h",
   marca: "Foston",
   modelo: "FS-S09 Pro",
