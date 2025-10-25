@@ -16,7 +16,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <header className="py-4 border-b">
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <h1 className="text-2xl font-headline font-bold text-primary">eletriczbrasil</h1>
+          
         </div>
       </header>
       <main className="flex-grow container mx-auto px-4 py-8 md:py-12">
