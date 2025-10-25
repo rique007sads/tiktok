@@ -86,7 +86,7 @@ export const productData: Product = {
               data: "2023-11-05T11:00:00Z",
               texto: "Comprei para minha filha e ela ficou encantada! A Máquina de Bolhas Automática Elétrica é muito prática, é só ligar que começa a soltar várias bolhinhas. Usamos no aniversário e deixou tudo mais lindo e divertido. Recomendo demais! 🫧💕",
               fotoUrlComentario: null,
-              fotoUrlAutor: "https://i.postimg.cc/507X9Q8x/avatar-woman-1.png"
+              fotoUrlAutor: "https://i.postimg.cc/jj8hBz7F/feeedbakc-perfil.jpg"
           },
           "comentarioId_BS": {
               autor: "Bruno Santos",
