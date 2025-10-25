@@ -65,12 +65,12 @@ export const productData: Product = {
   },
   visaoGeral: {
     titulo: "Visão geral",
-    resumoProduto: "A escolha ideal para quem busca mobilidade urbana com praticidade, tecnologia e desempenho.",
+    resumoProduto: "A opção perfeita para transformar qualquer momento em diversão mágica!",
     diferenciais: [
-      "Economia de tempo no trânsito",
-      "Sustentável e ecológico",
-      "Fácil manuseio e controle",
-      "Baixo custo de manutenção"
+      "Funciona automaticamente – é só ligar!",
+      "Milhares de bolhas coloridas por minuto ✨",
+      "Segura e fácil para crianças",
+      "Ideal para presentes, festas e brincadeiras"
     ],
     avaliacoes: {
       tituloSecao: "Avaliações dos clientes",
