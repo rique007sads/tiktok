@@ -17,9 +17,9 @@ export const productData: Product = {
     totalVendidos: 8547
   },
   preco: {
-    atual: 67.90,
-    original: 619.90,
-    economiaPorcentagem: 85,
+    atual: 24.90,
+    original: 69.90,
+    economiaPorcentagem: 64,
     textoDetalheFrete: "Frete grátis"
   },
   ofertaRelampago: {
@@ -59,7 +59,7 @@ export const productData: Product = {
     carrinhoRapido: { icone: "carrinho", acao: "adicionar_carrinho" },
     comprarAgora: {
       texto: "Comprar agora",
-      precoDetalhe: "R$ 67,90 | Frete grátis",
+      precoDetalhe: "R$ 24,90 | Frete grátis",
       acao: "checkout_direto"
     }
   },
@@ -196,3 +196,4 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
     
 
     
+
