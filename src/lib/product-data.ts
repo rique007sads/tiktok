@@ -43,15 +43,14 @@ export const productData: Product = {
   },
   imagens: {
     contadorAtual: 1,
-    contadorTotal: 6,
+    contadorTotal: 5,
     urlPrincipal: "https://i.postimg.cc/Gh4jj2hv/Cn-P-24102025-212743.png",
     galeria: [
       { id: "img01", url: "https://i.postimg.cc/Gh4jj2hv/Cn-P-24102025-212743.png", tipo: "principal", alt: "Patinete elétrico inteiro" },
       { id: "img02", url: "https://i.postimg.cc/mDF9KdhS/Cn-P-24102025-213611.png", tipo: "dobrado", alt: "Patinete elétrico dobrado" },
       { id: "img03", url: "https://i.postimg.cc/TPgHGcyW/Cn-P-24102025-232753.png", tipo: "detalhe", alt: "Detalhe da roda traseira do patinete" },
       { id: "img04", url: "https://i.postimg.cc/5NfHm95p/Cn-P-24102025-213856.png", tipo: "vista_lateral", alt: "Vista lateral do patinete" },
-      { id: "img05", url: "https://i.postimg.cc/1txXVy5L/Cn-P-24102025-214004.png", tipo: "diagrama", alt: "Diagrama de dimensões do patinete" },
-      { id: "img06", url: "https://i.postimg.cc/NjTxrjQV/Cn-P-24102025-233113.png", tipo: "cenario", alt: "Patinete elétrico carregando" }
+      { id: "img05", url: "https://i.postimg.cc/1txXVy5L/Cn-P-24102025-214004.png", tipo: "diagrama", alt: "Diagrama de dimensões do patinete" }
     ]
   },
   barraAcoesFixa: {
@@ -86,7 +85,7 @@ export const productData: Product = {
               nota: 5,
               data: "2023-10-27T10:00:00Z",
               texto: "Comprei pro meu filho ele amou está indo pro trabalho com o patinete fácil fé andar praticidade na hora dd guardar produto excelente e meu filho conseguiu colocar no seguro.",
-              fotoUrlComentario: "https://i.postimg.cc/3rcjSvRq/Cn-P-24102025-233226.png",
+              fotoUrlComentario: null,
               fotoUrlAutor: "https://i.postimg.cc/fTx4jXj3/Cn-P-24102025-235201.png"
           },
           "comentarioId_RL": {
@@ -104,7 +103,7 @@ export const productData: Product = {
               nota: 5,
               data: "2023-10-27T10:30:00Z",
               texto: "Excelente meio de transporte para quem almeja não gastar com gasolina e busca praticidade, uso para ir ao trabalho e foi uma escolha ótima adquirir o produto!!.",
-              fotoUrlComentario: "https://i.postimg.cc/GmJM9xJw/Cn-P-24102025-233554.png",
+              fotoUrlComentario: "https://i.postimg.cc/tg4zJQ4d/Cn-P-24102025-233736.png",
               fotoUrlAutor: "https://i.postimg.cc/hvWyfyYN/Cn-P-24102025-235423.png"
           },
           "comentarioId_PS": {
