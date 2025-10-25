@@ -187,5 +187,3 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
   },
   {} as Record<string, ProductImage>
 );
-
-    
