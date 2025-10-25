@@ -63,10 +63,11 @@
   * {
     @apply border-border;
   }
-  body {
-    @apply bg-background text-foreground;
-     -webkit-font-smoothing: antialiased;
+  body, button, input, textarea {
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: #161823;
   }
 }
 
@@ -75,7 +76,41 @@
     font-size: 18px;
 }
 
+.preco-atual {
+    font-weight: 700;
+    font-size: 24px;
+}
+
 .botao-comprar-agora {
     background-color: #F84F66;
     color: white;
+}
+
+/* Container que armazena todas as miniaturas */
+.galeria-miniaturas {
+    display: flex;
+    overflow-x: auto; /* Permite a rolagem horizontal */
+    padding: 10px 0; /* Espaçamento vertical para não encostar na borda */
+    gap: 12px; /* Espaçamento entre as miniaturas */
+    -webkit-overflow-scrolling: touch; /* Melhor rolagem em dispositivos iOS */
+    /* Esconde a barra de rolagem nativa, se desejar */
+    scrollbar-width: none; 
+}
+
+.galeria-miniaturas::-webkit-scrollbar {
+  display: none;
+}
+
+/* Estilo individual de cada miniatura */
+.miniatura-item {
+    flex-shrink: 0; /* Impede que as imagens encolham */
+    width: 65px; /* Tamanho fixo */
+    height: 65px;
+    border-radius: 8px; /* Cantos arredondados */
+    border: 2px solid transparent;
+}
+
+/* Estilo para a miniatura ATIVA */
+.miniatura-item.ativa {
+    border: 2px solid #F84F66; /* Borda de destaque (cor do botão Comprar Agora) */
 }

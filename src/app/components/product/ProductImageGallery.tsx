@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState } from 'react';
@@ -38,14 +37,14 @@ export function ProductImageGallery({ images, productName }: ProductImageGallery
       </div>
 
       <div className="mt-2">
-        <div className="flex space-x-2 overflow-x-auto pb-2">
+        <div className="galeria-miniaturas">
           {images.map((image, index) => (
             <button
               key={image.id}
               onClick={() => handleThumbnailClick(image, index)}
               className={cn(
-                'block w-16 h-16 relative rounded-md overflow-hidden border-2',
-                activeIndex === index ? 'border-primary' : 'border-transparent'
+                'miniatura-item relative overflow-hidden',
+                activeIndex === index && 'ativa'
               )}
             >
               <Image
@@ -53,7 +52,7 @@ export function ProductImageGallery({ images, productName }: ProductImageGallery
                 alt={image.alt}
                 fill
                 className="object-cover"
-                sizes="64px"
+                sizes="65px"
               />
             </button>
           ))}
