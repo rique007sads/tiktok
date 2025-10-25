@@ -162,7 +162,7 @@ export const storeData: Store = {
   menusRodape: [
     {
       titulo: "Informações da empresa",
-      conteudo: "Aqui estão os dados de CNPJ, endereço e história da loja.",
+      conteudo: "Dados da loja...",
       acao: "expandir_ou_navegar"
     },
     {
