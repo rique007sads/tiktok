@@ -102,7 +102,7 @@ export const productData: Product = {
               nota: 5,
               data: "2023-10-27T10:30:00Z",
               texto: "Excelente meio de transporte para quem almeja não gastar com gasolina e busca praticidade, uso para ir ao trabalho e foi uma escolha ótima adquirir o produto!!.",
-              fotoUrlComentario: "https://picsum.photos/seed/review3/100/100"
+              fotoUrlComentario: "https://i.postimg.cc/GmJM9xJw/Cn-P-24102025-233554.png"
           },
           "comentarioId_PS": {
               autor: "Pietro Santos",
