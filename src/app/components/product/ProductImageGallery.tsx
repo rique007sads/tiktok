@@ -1,65 +1,52 @@
+
 'use client';
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { imageMap } from '@/lib/product-data';
 import { cn } from '@/lib/utils';
+import type { ProductImage } from '@/types';
 import { Card, CardContent } from '@/components/ui/card';
 
 interface ProductImageGalleryProps {
-  imageIds: string[];
+  mainImage: ProductImage;
+  thumbnails: ProductImage[];
 }
 
-export function ProductImageGallery({ imageIds }: ProductImageGalleryProps) {
-  const [currentImageId, setCurrentImageId] = useState(imageIds[0]);
-  const currentImage = imageMap[currentImageId];
+export function ProductImageGallery({ mainImage, thumbnails }: ProductImageGalleryProps) {
+  const allImages = [mainImage, ...thumbnails];
+  const [currentImage, setCurrentImage] = useState(mainImage);
 
   return (
-    <div className="flex flex-col gap-4">
-      <Card className="overflow-hidden">
-        <CardContent className="p-0">
-          <div className="aspect-square relative">
+    <div className="relative">
+        <div className="aspect-square relative bg-card">
             {currentImage && (
               <Image
                 src={currentImage.imageUrl}
                 alt={currentImage.description}
                 data-ai-hint={currentImage.imageHint}
                 fill
-                className="object-cover transition-opacity duration-300 ease-in-out"
-                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-contain"
+                sizes="100vw"
                 priority
               />
             )}
-          </div>
-        </CardContent>
-      </Card>
-      <div className="grid grid-cols-6 gap-2">
-        {imageIds.map((id) => {
-          const thumb = imageMap[id];
-          return (
-            <button
-              key={id}
-              onClick={() => setCurrentImageId(id)}
-              className={cn(
-                'aspect-square relative rounded-md overflow-hidden transition-all duration-200 ring-offset-background focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2',
-                currentImageId === id ? 'ring-2 ring-primary' : 'hover:opacity-80'
-              )}
-            >
-              {thumb && (
-                <Image
-                  src={thumb.imageUrl}
-                  alt={thumb.description}
-                  data-ai-hint={thumb.imageHint}
-                  fill
-                  className="object-cover"
-                  sizes="100px"
-                />
-              )}
-              <span className="sr-only">View image {id}</span>
-            </button>
-          );
-        })}
-      </div>
+        </div>
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
+            <div className="flex items-center gap-2 bg-black/50 p-1 rounded-full">
+                {allImages.map((img) => (
+                    <button 
+                        key={img.id}
+                        onClick={() => setCurrentImage(img)}
+                        className={cn(
+                            "h-1.5 w-1.5 rounded-full transition-colors",
+                            currentImage.id === img.id ? 'bg-white' : 'bg-white/50'
+                        )}
+                    >
+                        <span className='sr-only'>View image {img.id}</span>
+                    </button>
+                ))}
+            </div>
+        </div>
     </div>
   );
 }

@@ -1,10 +1,11 @@
+
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
   title: 'eletriczbrasil Showcase',
-  description: 'The best electric scooters for urban mobility.',
+  description: 'The best products for your setup.',
 };
 
 export default function RootLayout({

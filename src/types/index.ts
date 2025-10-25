@@ -1,16 +1,9 @@
+
 export interface ProductImage {
   id: string;
   description: string;
   imageUrl: string;
   imageHint: string;
-}
-
-export interface ProductReview {
-  autor: string;
-  nota: number;
-  cidade: string;
-  texto: string;
-  fotoUrlComentario: string | null;
 }
 
 export interface Product {
@@ -25,45 +18,54 @@ export interface Product {
   preco: {
     atual: number;
     original: number;
-    economiaPorcentagem: number;
-    textoEconomia: string;
+    descontoPorcentagem: number;
+    textoDesconto: string;
   };
-  ofertaRelampago: {
-    ativa: boolean;
-    titulo: string;
-    tempoRestante: string;
+  parcelamento: {
+    parcelas: number;
+    valorParcela: number;
+    juros: string;
+  };
+  cupom: {
+    ativo: boolean;
+    texto: string;
+    acao: string;
   };
   estatisticas: {
-    mediaAvaliacaoClientes: number;
-    totalAvaliacoesClientes: number;
-    totalAvaliacoesLoja: number;
+    mediaAvaliacao: number;
+    totalAvaliacoes: number;
     totalVendidos: number;
+  };
+  acoes: {
+    compartilhar: boolean;
+    carrinho: boolean;
+    favoritar: boolean;
   };
   logistica: {
     frete: {
       tipo: string;
-      detalhe: string;
-    };
-    devolucao: {
-      tipo: string;
-      prazoDias: number;
-      detalhe: string;
+      previsaoEntrega: string;
+      taxaEnvio: number;
+      acao: string;
     };
   };
-  resumoAvaliacoes: {
-    incluiMidia: number;
-    '5estrelas': number;
-    '4estrelas': number;
+  barraAcoesFixa: {
+    loja: { texto: string; acao: string };
+    chat: { texto: string; acao: string };
+    carrinhoRapido: { icone: string; texto: string; acao: string };
+    comprarAgora: {
+      texto: string;
+      precoDetalhe: string;
+      acao: string;
+    };
   };
-  comentariosAmostra: Record<string, ProductReview>;
-  descricaoDetalhada: {
-    paragrafoPrincipal: string;
-    fichaTecnica: Record<string, string>;
-    dicasDeUso: string[];
-    avisoLegal: string;
-  };
-  vendedor: {
-    nomeLoja: string;
-    totalProdutos: number;
-  };
+}
+
+// Keeping review types for potential future use, but they are not in the new product data.
+export interface ProductReview {
+  autor: string;
+  nota: number;
+  cidade: string;
+  texto: string;
+  fotoUrlComentario: string | null;
 }
