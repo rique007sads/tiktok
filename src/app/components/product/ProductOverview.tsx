@@ -22,7 +22,7 @@ export function ProductOverview({ product }: ProductOverviewProps) {
     return null;
   }
 
-  const reviews = Object.values(visaoGeral.avaliacoes.comentarios);
+  const reviews = visaoGeral.avaliacoes.comentarios;
 
   return (
     <div className="space-y-4">
