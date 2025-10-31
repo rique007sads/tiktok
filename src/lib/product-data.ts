@@ -34,7 +34,7 @@ export const productData: Product = {
   logistica: {
     frete: {
       tipo: "Frete grátis",
-      previsaoEntrega: "Receba entre 28 de out - 02 de nov"
+      previsaoEntrega: "Receba entre 4 de nov - 11 de nov"
     },
     devolucao: {
       tipo: "Devolução grátis",
@@ -196,6 +196,7 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
     
 
     
+
 
 
 
