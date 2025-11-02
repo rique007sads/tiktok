@@ -9,8 +9,8 @@ export const productData: Product = {
     urlIconeVerificacao: ""
   },
   nome: "Óculos de Realidade Virtual Meta Quest 3s, 256GB + Batman Arkham Shadow",
-  marca: "Foston",
-  modelo: "FS-S09 Pro",
+  marca: "Meta",
+  modelo: "Meta Quest 3s",
   estatisticas: {
     mediaAvaliacao: 4.8,
     totalAvaliacoes: 892,
@@ -78,8 +78,8 @@ export const productData: Product = {
           totalComentarios: 491,
           mediaGeral: 4.7
       },
-      comentarios: {
-          "comentarioId_AC": {
+      comentarios: [
+          {
               autor: "Ana Costa",
               cidade: "Salvador, BA",
               nota: 5,
@@ -88,7 +88,7 @@ export const productData: Product = {
               fotoUrlComentario: "https://i.postimg.cc/HsZscnbG/Whats-App-Image-2025-10-25-at-03-34-32.jpg",
               fotoUrlAutor: "https://i.postimg.cc/jj8hBz7F/feeedbakc-perfil.jpg"
           },
-          "comentarioId_BS": {
+          {
               autor: "Bruno Santos",
               cidade: "Fortaleza, CE",
               nota: 5,
@@ -97,7 +97,7 @@ export const productData: Product = {
               fotoUrlComentario: "https://i.postimg.cc/DZL81hnZ/Whats-App-Image-2025-10-25-at-03-34-31.jpg",
               fotoUrlAutor: "https://i.postimg.cc/fTx4jXj3/Cn-P-24102025-235201.png"
           },
-          "comentarioId_CO": {
+          {
               autor: "Carla Oliveira",
               cidade: "Brasília, DF",
               nota: 4,
@@ -106,7 +106,7 @@ export const productData: Product = {
               fotoUrlComentario: null,
               fotoUrlAutor: "https://i.postimg.cc/dtRXTFwr/Cn-P-24102025-235333.png"
           },
-          "comentarioId_DP": {
+          {
               autor: "Daniel Pereira",
               cidade: "Porto Alegre, RS",
               nota: 5,
@@ -115,7 +115,7 @@ export const productData: Product = {
               fotoUrlComentario: "https://i.postimg.cc/CKp7jhVf/foto-feeedbakc.jpg",
               fotoUrlAutor: "https://i.postimg.cc/hvWyfyYN/Cn-P-24102025-235423.png"
           },
-          "comentarioId_FR": {
+          {
               autor: "Fernanda Ribeiro",
               cidade: "Manaus, AM",
               nota: 5,
@@ -124,30 +124,46 @@ export const productData: Product = {
               fotoUrlComentario: null,
               fotoUrlAutor: "https://i.postimg.cc/43w8ZDrd/images.jpg"
           }
-      }
+      ]
     }
   },
   descricao: {
     titulo: "Descrição",
-    textoPrincipal: "Presente Perfeito para Crianças \n\n• Máquina de Bolhas Automática Elétrica:\nA escolha ideal para transformar qualquer momento em diversão! Basta ligar e a máquina começa a criar centenas de bolhas por minuto. As crianças ficam encantadas vendo o ambiente se encher de bolhinhas! \nPerfeita para festas, aniversários e brincadeiras no dia a dia.",
-    textoCompleto: "• Funcionamento Prático e Seguro:\nCom design portátil e leve, a máquina é fácil de transportar e usar. Não precisa assoprar, não faz sujeira e é segura para crianças. Ideal para usar no quintal, na sala, no parque ou em ambientes externos.\n\n• Diversão Garantida:\nA chuva de bolhinhas cria uma atmosfera mágica e alegre. As crianças amam correr e estourar bolhas, e os adultos também! Um presente que garante sorrisos, fotos lindas e horas de entretenimento.",
+    textoPrincipal: "Meta quest 3s – Transforme sua realidade agora!\n\nTransforme qualquer espaço na sua casa em um incrível playground de realidade mista e virtual. Com o meta quest 3s, leve o batman: arkham shadow e viva experiências extraordinárias!",
+    textoCompleto: "Realidade mista e virtual\nDescubra milhares de aventuras, misturando objetos digitais em seu espaço físico ou mergulhe de cabeça na realidade virtual.\n\nDiversão social ilimitada\nConecte-se com amigos ao redor do mundo, participe de shows ao vivo no meta horizon, ou transmita suas partidas diretamente para a tv. A diversão nunca para!\n\nMultitarefa como nunca antes\nAbra várias telas simultaneamente: navegue na web, assista a vídeos no youtube e converse com amigos, tudo ao mesmo tempo e sem sair do lugar.\n\nCinema privado em casa\nTransforme qualquer ambiente em um cinema gigantesco! Desfrute de seus filmes e séries favoritos com a melhor qualidade.\n\nRedes sociais integradas\nUse whatsapp, instagram e facebook messenger enquanto joga e permanece conectado aos seus amigos.\n\nLiberdade de movimento\nTreine virtualmente ou jogue com toda a liberdade! O meta quest 3s é leve e sem fio, permitindo movimentos naturais em qualquer ambiente.\n\nGráficos avançados\nDesfrute de um desempenho gráfico de tirar o fôlego com uma gpu duas vezes mais potente que a do meta quest 2. Utilize os controladores touch plus para precisão total e sensações realistas.\n\nControle parental simples e eficaz\nGerencie o uso diário, adicione usuários, compartilhe conteúdo e mantenha sua família segura com conselhos de segurança infantil online.\n\nExperiências extraordinárias a um preço incrível!\nDescubra o poder do meta quest 3s e reinvente a forma como você se diverte, trabalha e se conecta. As possibilidades são infinitas!\n\nOnde você vai começar sua aventura? Aproveite agora e leve sua experiência para o próximo nível com o meta quest 3s!",
     fichaTecnica: {
-      "Nome do Produto": "Máquina de Bolhas Automática Elétrica",
-      "Alimentação": "Pode variar por modelo: USB / Pilhas / Bateria Recarregável",
-      "Material": "Plástico ABS resistente e seguro para crianças",
-      "Uso": "Infantil / Festas / Brincadeiras Internas e Externas",
-      "Produção de Bolhas": "Alto volume (vários furos que liberam bolhas contínuas)",
-      "Portabilidade": "Leve e fácil de transportar",
-      "Idade Recomendada": "3 anos ou mais"
+      "Marca": "Meta",
+      "Modelo": "Meta Quest 3s",
+      "Cor": "Branco",
+      "Processador cpu": "qualcomm snapdragon xr2",
+      "Áudio": "3d, som posicional",
+      "Visor": "lcd",
+      "Alto-falante": "integrados",
+      "Conectividade wireless": "wi-fi",
+      "Resolução da tela": "1832 × 1920",
+      "Bateria": "óculos: 4.324 mah - controle touch: requer 1 pilha aa",
+      "Memória": "256gb",
+      "Memória ram": "8gb",
+      "Duração da bateria": "aproximadamente 2h30min",
+      "Alimentação": "através da entrada usb-c",
+      "Dimensões aproximadas do produto (AxLxP)": "10x8x8cm",
+      "Peso aproximado do produto sem embalagem": "900g",
+      "Dimensões da embalagem (cm)": "21.7 x 11.9 x 24.4",
+      "Peso bruto": "1385g",
+      "Anatel": "002090905131",
+      "Conteúdo da Embalagem": [
+        "1 Óculos Meta Quest 3s, 256GB",
+        "Jogo batman arkham shadow (versão digital)",
+        "2 controles touch",
+        "Adaptador de energia",
+        "Cabo usb-c",
+        "2 pilhas aa",
+        "Separador de óculos",
+        "Manual"
+      ]
     },
-    dicasDeUso: [
-      "Use líquido próprio para bolhas para melhor resultado (misturas caseiras também funcionam)",
-      "Mantenha o reservatório sempre na altura correta para que a máquina não borre o motor",
-      "Para usar em festas, posicione em um local elevado para espalhar as bolhas no ambiente",
-      "Após o uso, limpe o bocal com um pano úmido para não acumular líquido seco",
-      "Evite deixar o líquido derramar sobre o motor"
-    ],
-    avisoLegal: "Idade mínima recomendada: 8 anos."
+    dicasDeUso: [],
+    avisoLegal: "Garantia do Fornecedor: 3 Meses. Peso: 1385 gramas (bruto com embalagem)"
   }
 };
 
