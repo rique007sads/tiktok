@@ -8,7 +8,7 @@ export const productData: Product = {
     nome: "BrincaKids",
     urlIconeVerificacao: ""
   },
-  nome: "Máquina de Bolhas Automática Elétrica – diversão garantida para crianças e família!, criando um ambiente mágico e divertido instantaneamente.",
+  nome: "Óculos de Realidade Virtual Meta Quest 3s, 256GB + Batman Arkham Shadow",
   marca: "Foston",
   modelo: "FS-S09 Pro",
   estatisticas: {
