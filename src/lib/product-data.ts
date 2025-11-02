@@ -113,7 +113,7 @@ export const productData: Product = {
           nota: 5,
           data: "2023-11-02T18:00:00Z",
           texto: "Excelente, melhora muito a experiência com mais versatilidade no ajuste, conforte e duração da bateria. Equipamento essencial pra quem tem um Meta Quest 3 / 3s.",
-          fotoUrlComentario: null,
+          fotoUrlComentario: "https://i.postimg.cc/hGdzjR4j/Ae81b6c1284f54a92bab0a44f84590694n-jpg-960x960q75-jpg.avif",
           fotoUrlAutor: "https://i.postimg.cc/dVf0MNYx/images.jpg"
         },
         {
