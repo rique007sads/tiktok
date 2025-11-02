@@ -59,7 +59,7 @@ export const productData: Product = {
     carrinhoRapido: { icone: "carrinho", acao: "adicionar_carrinho" },
     comprarAgora: {
       texto: "Comprar agora",
-      precoDetalhe: "R$ 78,90 | Frete grátis",
+      precoDetalhe: "R$ 64,90 | Frete grátis",
       acao: "checkout_direto"
     }
   },
@@ -229,4 +229,5 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
     
 
     
+
 
