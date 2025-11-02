@@ -77,54 +77,54 @@ export const productData: Product = {
       tituloSecao: "Avaliações dos clientes",
       avaliacoesGerais: {
           totalComentarios: 491,
-          mediaGeral: 4.7
+          mediaGeral: 4.8
       },
       comentarios: [
-          {
-              autor: "Ana Costa",
-              cidade: "Salvador, BA",
-              nota: 5,
-              data: "2023-11-05T11:00:00Z",
-              texto: "Produto sensacional, aumentou em horas a duração da bateria. é bem confortável, o que permite que você consiga ficar muito mais tempo com o óculos na cabeça. A bateria é perfeita, aumenta bastante a duração, tanto que até hoje nao cheguei a usar 100% da carga. Recomendo demais pra qualquer um que tenha o meta quest. A entrega chegou dentro do prazo sem qualquer problema.",
-              fotoUrlComentario: "https://i.postimg.cc/ZKz0nNkj/Ac677b2446d6342c8b038916607186965Q-jpg-960x960q75-jpg.avif",
-              fotoUrlAutor: "https://i.postimg.cc/jj8hBz7F/feeedbakc-perfil.jpg"
-          },
-          {
-              autor: "Bruno Santos",
-              cidade: "Fortaleza, CE",
-              nota: 5,
-              data: "2023-11-04T15:20:00Z",
-              texto: "Achei que fosse fraca, mas me surpreendeu! As bolhas saem sem parar e fazem um efeito muito bonito. Meu filho corre atrás delas o tempo todo 😂. Leve, fácil de usar e dá pra levar em qualquer lugar.",
-              fotoUrlComentario: "https://i.postimg.cc/gk2QvSP8/A7b7407e7843942ee866d5c37abe67d895-jpg-960x960q75-jpg.avif",
-              fotoUrlAutor: "https://i.postimg.cc/fTx4jXj3/Cn-P-24102025-235201.png"
-          },
-          {
-              autor: "Carla Oliveira",
-              cidade: "Brasília, DF",
-              nota: 4,
-              data: "2023-11-03T09:45:00Z",
-              texto: "Gostei bastante! Só não dei 5 estrelas porque queria que viesse com mais líquido, mas nada que atrapalhe. Funciona super bem e as crianças amam. Usei na festa da minha sobrinha e foi sucesso!",
-              fotoUrlComentario: null,
-              fotoUrlAutor: "https://i.postimg.cc/dtRXTFwr/Cn-P-24102025-235333.png"
-          },
-          {
-              autor: "Daniel Pereira",
-              cidade: "Porto Alegre, RS",
-              nota: 5,
-              data: "2023-11-02T18:00:00Z",
-              texto: "Excelente para deixar o ambiente mais alegre. Uso no quintal nos finais de semana. Ajuda até pra tirar fotos lindas com as crianças 🫧✨. Vale muito a pena, produto ótimo!",
-              fotoUrlComentario: "https://i.postimg.cc/02hnbckT/A9994eee6ed9d4f758035b4693e6b2e5bq-jpeg-960x960q75-jpeg.avif",
-              fotoUrlAutor: "https://i.postimg.cc/hvWyfyYN/Cn-P-24102025-235423.png"
-          },
-          {
-              autor: "Fernanda Ribeiro",
-              cidade: "Manaus, AM",
-              nota: 5,
-              data: "2023-11-01T14:10:00Z",
-              texto: "Amei! Eu uso na pracinha com minha filha e outras crianças acabam vindo brincar junto. A máquina funciona direitinho e é super segura. Presente perfeito 🎁💖",
-              fotoUrlComentario: null,
-              fotoUrlAutor: "https://i.postimg.cc/43w8ZDrd/images.jpg"
-          }
+        {
+          autor: "Juliana Costa",
+          cidade: "Curitiba, PR",
+          nota: 5,
+          data: "2023-11-05T11:00:00Z",
+          texto: "Comprei o Meta Quest 3s e estou impressionado! A imersão é absurda, parece que você realmente está dentro do jogo. Os gráficos são lindos e o som 3D deixa tudo ainda mais real. Melhor compra do ano! 🎮🔥",
+          fotoUrlComentario: null,
+          fotoUrlAutor: "https://i.postimg.cc/jj8hBz7F/feeedbakc-perfil.jpg"
+        },
+        {
+          autor: "André Oliveira",
+          cidade: "Salvador, BA",
+          nota: 5,
+          data: "2023-11-04T15:20:00Z",
+          texto: "Meu marido e eu usamos juntos e é diversão garantida! Dá pra assistir filmes, jogar e até conversar com os amigos no WhatsApp sem tirar o headset. Muito prático e leve, adorei a liberdade de movimento! 💫",
+          fotoUrlComentario: null,
+          fotoUrlAutor: "https://i.postimg.cc/fTx4jXj3/Cn-P-24102025-235201.png"
+        },
+        {
+          autor: "Camila Ferreira",
+          cidade: "Rio de Janeiro, RJ",
+          nota: 5,
+          data: "2023-11-03T09:45:00Z",
+          texto: "Achei que seria complicado de configurar, mas é super simples! Em minutos já estava jogando Batman Arkham Shadow e fiquei de boca aberta com os gráficos. Experiência surreal! 🦇⚡",
+          fotoUrlComentario: null,
+          fotoUrlAutor: "https://i.postimg.cc/dtRXTFwr/Cn-P-24102025-235333.png"
+        },
+        {
+          autor: "Felipe Nunes",
+          cidade: "Belo Horizonte, MG",
+          nota: 5,
+          data: "2023-11-02T18:00:00Z",
+          texto: "Comprei pro meu filho e ele ficou encantado! Eu também uso pra ver séries e parece que estou num cinema gigante. A bateria dura bem e os controles são bem precisos. Produto top! 🍿😎",
+          fotoUrlComentario: null,
+          fotoUrlAutor: "https://i.postimg.cc/hvWyfyYN/Cn-P-24102025-235423.png"
+        },
+        {
+          autor: "Fernanda Ribeiro",
+          cidade: "Manaus, AM",
+          nota: 5,
+          data: "2023-11-01T14:10:00Z",
+          texto: "Sensacional! Uso o Meta Quest 3s pra treinar boxe virtual e até pra relaxar assistindo vídeos. É leve, confortável e o som 3D é incrível. Recomendo pra quem quer tecnologia e diversão em um só produto! 💪🎧",
+          fotoUrlComentario: null,
+          fotoUrlAutor: "https://i.postimg.cc/43w8ZDrd/images.jpg"
+        }
       ]
     }
   },
@@ -229,6 +229,7 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
     
 
     
+
 
 
 

@@ -96,9 +96,7 @@ export interface Product {
             totalComentarios: number;
             mediaGeral: number;
         };
-        comentarios: {
-            [key: string]: Comentario;
-        };
+        comentarios: Comentario[];
     }
   };
   descricao: {

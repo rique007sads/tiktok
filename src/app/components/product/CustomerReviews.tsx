@@ -46,7 +46,7 @@ export function CustomerReviews({ reviews, totalReviews, averageRating, title }:
         </div>
 
         {reviews.map((review, index) => (
-          <div key={index} className="space-y-2">
+          <div key={index} className="space-y-2 border-b pb-4 last:border-b-0 last:pb-0">
             <div className="flex items-center gap-2">
               <Avatar className="h-8 w-8">
                 {review.fotoUrlAutor ? (
@@ -77,7 +77,7 @@ export function CustomerReviews({ reviews, totalReviews, averageRating, title }:
           </div>
         ))}
         {reviews.length > 0 && (
-          <Button variant="outline" className="w-full">
+          <Button variant="outline" className="w-full mt-4">
             Ver todas as avaliações ({totalReviews})
           </Button>
         )}
