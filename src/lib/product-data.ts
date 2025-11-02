@@ -86,7 +86,7 @@ export const productData: Product = {
           nota: 5,
           data: "2023-11-05T11:00:00Z",
           texto: "Comprei o Meta Quest 3s e estou impressionado! A imersão é absurda, parece que você realmente está dentro do jogo. Os gráficos são lindos e o som 3D deixa tudo ainda mais real. Melhor compra do ano! 🎮🔥",
-          fotoUrlComentario: null,
+          fotoUrlComentario: "https://i.postimg.cc/gk2QvSP8/A7b7407e7843942ee866d5c37abe67d895-jpg-960x960q75-jpg.avif",
           fotoUrlAutor: "https://i.postimg.cc/qBCBnx28/caafc22606ecc23f6f5ff875ef4689c8.jpg"
         },
         {
