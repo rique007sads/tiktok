@@ -17,9 +17,9 @@ export const productData: Product = {
     totalVendidos: 8547
   },
   preco: {
-    atual: 78.90,
-    original: 849.90,
-    economiaPorcentagem: 91,
+    atual: 64.90,
+    original: 1241.90,
+    economiaPorcentagem: 95,
     textoDetalheFrete: "Frete grátis"
   },
   ofertaRelampago: {
@@ -204,6 +204,8 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
 
 
 
+
+    
 
     
 
