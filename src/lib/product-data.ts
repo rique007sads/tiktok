@@ -96,7 +96,7 @@ export const productData: Product = {
           data: "2023-11-04T15:20:00Z",
           texto: "Meu marido e eu usamos juntos e é diversão garantida! Dá pra assistir filmes, jogar e até conversar com os amigos no WhatsApp sem tirar o headset. Muito prático e leve, adorei a liberdade de movimento! 💫",
           fotoUrlComentario: null,
-          fotoUrlAutor: "https://i.postimg.cc/gk2QvSP8/A7b7407e7843942ee866d5c37abe67d895-jpg-960x960q75-jpg.avif"
+          fotoUrlAutor: "https://i.postimg.cc/RFCjV44n/20230609-093650.webp"
         },
         {
           autor: "Camila Ferreira",
@@ -229,6 +229,7 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
     
 
     
+
 
 
 
