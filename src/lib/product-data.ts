@@ -50,7 +50,7 @@ export const productData: Product = {
       { id: "img02", url: "https://i.postimg.cc/3x1fc2Cv/tela.webp", tipo: "dobrado", alt: "Máquina de bolhas de perto" },
       { id: "img03", url: "https://i.postimg.cc/rpSsTFsW-/ehhjsadfjjj.webp", tipo: "detalhe", alt: "Criança brincando com bolhas" },
       { id: "img04", url: "https://i.postimg.cc/bJvX8NMY/fototiktok.webp", tipo: "vista_lateral", alt: "Máquina de bolhas em ambiente externo" },
-      { id: "img05", url: "https://i.postimg.cc/XXSDZV2w/fotosd3dwtiktok.webp", tipo: "diagrama", alt: "Detalhe da máquina de bolhas" }
+      { id: "img05", url: "https://i.postimg.cc/ncyQfWTJ/dfedf3343.webp", tipo: "diagrama", alt: "Detalhe da máquina de bolhas" }
     ]
   },
   barraAcoesFixa: {
