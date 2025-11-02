@@ -101,7 +101,7 @@ export const productData: Product = {
         {
           autor: "Camila Ferreira",
           cidade: "Rio de Janeiro, RJ",
-          nota: 5,
+          nota: 4.5,
           data: "2023-11-03T09:45:00Z",
           texto: "Achei que seria complicado de configurar, mas é super simples! Em minutos já estava jogando Batman Arkham Shadow e fiquei de boca aberta com os gráficos. Experiência surreal! 🦇⚡",
           fotoUrlComentario: null,
@@ -110,7 +110,7 @@ export const productData: Product = {
         {
           autor: "Felipe Nunes",
           cidade: "Belo Horizonte, MG",
-          nota: 4,
+          nota: 4.5,
           data: "2023-11-02T18:00:00Z",
           texto: "Excelente, melhora muito a experiência com mais versatilidade no ajuste, conforte e duração da bateria. Equipamento essencial pra quem tem um Meta Quest 3 / 3s.",
           fotoUrlComentario: "https://i.postimg.cc/hGdzjR4j/Ae81b6c1284f54a92bab0a44f84590694n-jpg-960x960q75-jpg.avif",
@@ -205,48 +205,3 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
   },
   {} as Record<string, ProductImage>
 );
-
-
-    
-    
-
-    
-
-    
-
-
-
-
-
-
-
-
-
-    
-
-    
-
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    
