@@ -114,7 +114,7 @@ export const productData: Product = {
           data: "2023-11-02T18:00:00Z",
           texto: "Comprei pro meu filho e ele ficou encantado! Eu também uso pra ver séries e parece que estou num cinema gigante. A bateria dura bem e os controles são bem precisos. Produto top! 🍿😎",
           fotoUrlComentario: null,
-          fotoUrlAutor: "https://i.postimg.cc/02hnbckT/A9994eee6ed9d4f758035b4693e6b2e5bq-jpeg-960x960q75-jpeg.avif"
+          fotoUrlAutor: "https://i.postimg.cc/dVf0MNYx/images.jpg"
         },
         {
           autor: "Fernanda Ribeiro",
@@ -229,6 +229,7 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
     
 
     
+
 
 
 
