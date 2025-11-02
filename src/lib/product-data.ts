@@ -95,7 +95,7 @@ export const productData: Product = {
               nota: 5,
               data: "2023-11-04T15:20:00Z",
               texto: "Achei que fosse fraca, mas me surpreendeu! As bolhas saem sem parar e fazem um efeito muito bonito. Meu filho corre atrás delas o tempo todo 😂. Leve, fácil de usar e dá pra levar em qualquer lugar.",
-              fotoUrlComentario: "https://i.postimg.cc/DZL81hnZ/Whats-App-Image-2025-10-25-at-03-34-31.jpg",
+              fotoUrlComentario: "https://i.postimg.cc/gk2QvSP8/A7b7407e7843942ee866d5c37abe67d895-jpg-960x960q75-jpg.avif",
               fotoUrlAutor: "https://i.postimg.cc/fTx4jXj3/Cn-P-24102025-235201.png"
           },
           {
@@ -229,6 +229,7 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
     
 
     
+
 
 
 
