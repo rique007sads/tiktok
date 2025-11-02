@@ -86,7 +86,7 @@ export const productData: Product = {
               nota: 5,
               data: "2023-11-05T11:00:00Z",
               texto: "Comprei para minha filha e ela ficou encantada! A Máquina de Bolhas Automática Elétrica é muito prática, é só ligar que começa a soltar várias bolhinhas. Usamos no aniversário e deixou tudo mais lindo e divertido. Recomendo demais! 🫧💕",
-              fotoUrlComentario: "https://i.postimg.cc/HsZscnbG/Whats-App-Image-2025-10-25-at-03-34-32.jpg",
+              fotoUrlComentario: "https://i.postimg.cc/ZKz0nNkj/Ac677b2446d6342c8b038916607186965Q-jpg-960x960q75-jpg.avif",
               fotoUrlAutor: "https://i.postimg.cc/jj8hBz7F/feeedbakc-perfil.jpg"
           },
           {
@@ -229,5 +229,6 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
     
 
     
+
 
 
