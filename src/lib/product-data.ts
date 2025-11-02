@@ -94,7 +94,7 @@ export const productData: Product = {
           cidade: "Salvador, BA",
           nota: 5,
           data: "2023-11-04T15:20:00Z",
-          texto: "Meu marido e eu usamos juntos e é diversão garantida! Dá pra assistir filmes, jogar e até conversar com os amigos no WhatsApp sem tirar o headset. Muito prático e leve, adorei a liberdade de movimento! 💫",
+          texto: "O que mais me encantou foi o atendimento, sempre me respondendo e informando, vou comprar mais produtos de VR com eles",
           fotoUrlComentario: null,
           fotoUrlAutor: "https://i.postimg.cc/RFCjV44n/20230609-093650.webp"
         },
@@ -229,6 +229,7 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
     
 
     
+
 
 
 
