@@ -85,7 +85,7 @@ export const productData: Product = {
               cidade: "Salvador, BA",
               nota: 5,
               data: "2023-11-05T11:00:00Z",
-              texto: "Comprei para minha filha e ela ficou encantada! A Máquina de Bolhas Automática Elétrica é muito prática, é só ligar que começa a soltar várias bolhinhas. Usamos no aniversário e deixou tudo mais lindo e divertido. Recomendo demais! 🫧💕",
+              texto: "Produto sensacional, aumentou em horas a duração da bateria. é bem confortável, o que permite que você consiga ficar muito mais tempo com o óculos na cabeça. A bateria é perfeita, aumenta bastante a duração, tanto que até hoje nao cheguei a usar 100% da carga. Recomendo demais pra qualquer um que tenha o meta quest. A entrega chegou dentro do prazo sem qualquer problema.",
               fotoUrlComentario: "https://i.postimg.cc/ZKz0nNkj/Ac677b2446d6342c8b038916607186965Q-jpg-960x960q75-jpg.avif",
               fotoUrlAutor: "https://i.postimg.cc/jj8hBz7F/feeedbakc-perfil.jpg"
           },
@@ -229,6 +229,7 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
     
 
     
+
 
 
 
