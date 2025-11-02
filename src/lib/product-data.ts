@@ -12,7 +12,7 @@ export const productData: Product = {
   marca: "Meta",
   modelo: "Meta Quest 3s",
   estatisticas: {
-    mediaAvaliacao: 4.8,
+    mediaAvaliacao: 4.6,
     totalAvaliacoes: 892,
     totalVendidos: 8547
   },
@@ -77,7 +77,7 @@ export const productData: Product = {
       tituloSecao: "Avaliações dos clientes",
       avaliacoesGerais: {
           totalComentarios: 491,
-          mediaGeral: 4.8
+          mediaGeral: 4.6
       },
       comentarios: [
         {
@@ -92,7 +92,7 @@ export const productData: Product = {
         {
           autor: "André Oliveira",
           cidade: "Salvador, BA",
-          nota: 5,
+          nota: 4,
           data: "2023-11-04T15:20:00Z",
           texto: "O que mais me encantou foi o atendimento, sempre me respondendo e informando, vou comprar mais produtos de VR com eles",
           fotoUrlComentario: null,
@@ -110,7 +110,7 @@ export const productData: Product = {
         {
           autor: "Felipe Nunes",
           cidade: "Belo Horizonte, MG",
-          nota: 5,
+          nota: 4,
           data: "2023-11-02T18:00:00Z",
           texto: "Excelente, melhora muito a experiência com mais versatilidade no ajuste, conforte e duração da bateria. Equipamento essencial pra quem tem um Meta Quest 3 / 3s.",
           fotoUrlComentario: "https://i.postimg.cc/hGdzjR4j/Ae81b6c1284f54a92bab0a44f84590694n-jpg-960x960q75-jpg.avif",
