@@ -46,7 +46,7 @@ export const productData: Product = {
     contadorTotal: 5,
     urlPrincipal: "https://i.postimg.cc/Dwtm8RFX/tiktok.webp",
     galeria: [
-      { id: "img01", url: "https://i.postimg.cc/GhvbX913/fototiktok2334ds.webp", tipo: "principal", alt: "Máquina de Bolhas em uso" },
+      { id: "img01", url: "https://i.postimg.cc/yx8wLn2k/Captura-de-tela-2025-11-02-135437.png", tipo: "principal", alt: "Máquina de Bolhas em uso" },
       { id: "img02", url: "https://i.postimg.cc/Dwtm8RFX/tiktok.webp", tipo: "dobrado", alt: "Máquina de bolhas de perto" },
       { id: "img03", url: "https://i.postimg.cc/ry36XT9z/fototikodso23.webp", tipo: "detalhe", alt: "Criança brincando com bolhas" },
       { id: "img04", url: "https://i.postimg.cc/bJvX8NMY/fototiktok.webp", tipo: "vista_lateral", alt: "Máquina de bolhas em ambiente externo" },
@@ -196,6 +196,7 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
     
 
     
+
 
 
 
