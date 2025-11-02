@@ -123,7 +123,7 @@ export const productData: Product = {
           data: "2023-11-01T14:10:00Z",
           texto: "Sensacional! Uso o Meta Quest 3s pra treinar boxe virtual e até pra relaxar assistindo vídeos. É leve, confortável e o som 3D é incrível. Recomendo pra quem quer tecnologia e diversão em um só produto! 💪🎧",
           fotoUrlComentario: null,
-          fotoUrlAutor: "https://i.postimg.cc/43w8ZDrd/images.jpg"
+          fotoUrlAutor: "https://i.postimg.cc/02hnbckT/A9994eee6ed9d4f758035b4693e6b2e5bq-jpeg-960x960q75-jpeg.avif"
         }
       ]
     }
@@ -229,6 +229,7 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
     
 
     
+
 
 
 
