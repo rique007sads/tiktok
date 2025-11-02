@@ -65,12 +65,13 @@ export const productData: Product = {
   },
   visaoGeral: {
     titulo: "Visão geral",
-    resumoProduto: "A opção perfeita para transformar qualquer momento em diversão mágica!",
+    resumoProduto: "A opção perfeita para transformar qualquer espaço em uma experiência extraordinária!",
     diferenciais: [
-      "Funciona automaticamente – é só ligar!",
-      "Milhares de bolhas coloridas por minuto",
-      "Segura e fácil para crianças",
-      "Ideal para presentes, festas e brincadeiras"
+      "Realidade mista e virtual em um só dispositivo",
+      "Leve, sem fios e com liberdade total de movimento",
+      "Gráficos impressionantes e som 3D imersivo",
+      "Milhares de jogos, apps e experiências sociais",
+      "Diversão, trabalho e entretenimento em um só lugar"
     ],
     avaliacoes: {
       tituloSecao: "Avaliações dos clientes",
@@ -228,3 +229,4 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
     
 
     
+
