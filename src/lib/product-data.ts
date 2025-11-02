@@ -121,8 +121,8 @@ export const productData: Product = {
           cidade: "Valinhos, SP",
           nota: 5,
           data: "2023-11-01T14:10:00Z",
-          texto: "Produto original. Chegou direitinho, muito embalado. Valeu cada centavo pago, pois eleva muito o conforto e qualidade durante o uso do Meta Quest. Comprem sem medo.",
-          fotoUrlComentario: null,
+          texto: "Produto original. Chegou direitinho, muito embalado. Valeu cada centavo pago, pois eleva muito o conforto e qualidade durante o uso do Meta Quest. Comprem sem medo. VALINHOS - SP.",
+          fotoUrlComentario: "https://i.postimg.cc/8zTtMwfW/A786a65a90dbd4684a8200c311f28662c-W-jpeg-960x960q75-jpeg.avif",
           fotoUrlAutor: "https://i.postimg.cc/X7mvmD3P/91c2fda4b1b4f169959331e2f07e409e.jpg"
         }
       ]
@@ -246,5 +246,7 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
 
 
 
+
+    
 
     
