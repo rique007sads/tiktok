@@ -118,10 +118,10 @@ export const productData: Product = {
         },
         {
           autor: "Fernanda Ribeiro",
-          cidade: "Manaus, AM",
+          cidade: "Valinhos, SP",
           nota: 5,
           data: "2023-11-01T14:10:00Z",
-          texto: "Sensacional! Uso o Meta Quest 3s pra treinar boxe virtual e até pra relaxar assistindo vídeos. É leve, confortável e o som 3D é incrível. Recomendo pra quem quer tecnologia e diversão em um só produto! 💪🎧",
+          texto: "Produto original. Chegou direitinho, muito embalado. Valeu cada centavo pago, pois eleva muito o conforto e qualidade durante o uso do Meta Quest. Comprem sem medo.",
           fotoUrlComentario: null,
           fotoUrlAutor: "https://i.postimg.cc/X7mvmD3P/91c2fda4b1b4f169959331e2f07e409e.jpg"
         }
