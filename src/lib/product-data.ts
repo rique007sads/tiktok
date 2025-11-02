@@ -87,7 +87,7 @@ export const productData: Product = {
           data: "2023-11-05T11:00:00Z",
           texto: "Comprei o Meta Quest 3s e estou impressionado! A imersão é absurda, parece que você realmente está dentro do jogo. Os gráficos são lindos e o som 3D deixa tudo ainda mais real. Melhor compra do ano! 🎮🔥",
           fotoUrlComentario: null,
-          fotoUrlAutor: "https://i.postimg.cc/jj8hBz7F/feeedbakc-perfil.jpg"
+          fotoUrlAutor: "https://i.postimg.cc/ZKz0nNkj/Ac677b2446d6342c8b038916607186965Q-jpg-960x960q75-jpg.avif"
         },
         {
           autor: "André Oliveira",
@@ -96,7 +96,7 @@ export const productData: Product = {
           data: "2023-11-04T15:20:00Z",
           texto: "Meu marido e eu usamos juntos e é diversão garantida! Dá pra assistir filmes, jogar e até conversar com os amigos no WhatsApp sem tirar o headset. Muito prático e leve, adorei a liberdade de movimento! 💫",
           fotoUrlComentario: null,
-          fotoUrlAutor: "https://i.postimg.cc/fTx4jXj3/Cn-P-24102025-235201.png"
+          fotoUrlAutor: "https://i.postimg.cc/gk2QvSP8/A7b7407e7843942ee866d5c37abe67d895-jpg-960x960q75-jpg.avif"
         },
         {
           autor: "Camila Ferreira",
@@ -229,6 +229,7 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
     
 
     
+
 
 
 
