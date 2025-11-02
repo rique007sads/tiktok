@@ -112,7 +112,7 @@ export const productData: Product = {
           cidade: "Belo Horizonte, MG",
           nota: 5,
           data: "2023-11-02T18:00:00Z",
-          texto: "Comprei pro meu filho e ele ficou encantado! Eu também uso pra ver séries e parece que estou num cinema gigante. A bateria dura bem e os controles são bem precisos. Produto top! 🍿😎",
+          texto: "Excelente, melhora muito a experiência com mais versatilidade no ajuste, conforte e duração da bateria. Equipamento essencial pra quem tem um Meta Quest 3 / 3s.",
           fotoUrlComentario: null,
           fotoUrlAutor: "https://i.postimg.cc/dVf0MNYx/images.jpg"
         },
@@ -245,3 +245,6 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
 
 
 
+
+
+    
