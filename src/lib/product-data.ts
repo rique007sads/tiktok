@@ -113,7 +113,7 @@ export const productData: Product = {
               nota: 5,
               data: "2023-11-02T18:00:00Z",
               texto: "Excelente para deixar o ambiente mais alegre. Uso no quintal nos finais de semana. Ajuda até pra tirar fotos lindas com as crianças 🫧✨. Vale muito a pena, produto ótimo!",
-              fotoUrlComentario: "https://i.postimg.cc/CKp7jhVf/foto-feeedbakc.jpg",
+              fotoUrlComentario: "https://i.postimg.cc/02hnbckT/A9994eee6ed9d4f758035b4693e6b2e5bq-jpeg-960x960q75-jpeg.avif",
               fotoUrlAutor: "https://i.postimg.cc/hvWyfyYN/Cn-P-24102025-235423.png"
           },
           {
@@ -229,6 +229,7 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
     
 
     
+
 
 
 
