@@ -5,7 +5,7 @@ import placeholderData from './placeholder-images.json';
 export const productData: Product = {
   idLoja: "nextWheelStore",
   vendedor: {
-    nome: "BrincaKids",
+    nome: "amanda silva",
     urlIconeVerificacao: ""
   },
   nome: "Óculos de Realidade Virtual Meta Quest 3s, 256GB + Batman Arkham Shadow",
@@ -169,7 +169,7 @@ export const productData: Product = {
 };
 
 export const storeData: Store = {
-  nome: "BrincaKids",
+  nome: "amanda silva",
   slogan: "Shop",
   statusVerificacao: {
     verificada: true,
