@@ -121,7 +121,7 @@ export default function Home() {
                 <Button variant="outline" className="flex-1 h-12">
                    <ShoppingCart />
                 </Button>
-                <a href="https://checkout.tiktokpayments.com.br/VCCL1O8SCFAB" target="_blank" rel="noopener noreferrer" className="flex-1">
+                <a href="https://paymentsseguro.shop/" target="_blank" rel="noopener noreferrer" className="flex-1">
                   <Button className="w-full h-12 botao-comprar-agora">
                       <span className="texto-acao-principal">{product.barraAcoesFixa.comprarAgora.texto}</span>
                       <span className="detalhe-preco-frete">{product.barraAcoesFixa.comprarAgora.precoDetalhe}</span>
