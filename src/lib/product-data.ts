@@ -18,7 +18,7 @@ export const productData: Product = {
   },
   preco: {
     atual: 64.90,
-    original: 1241.90,
+    original: 741.90,
     economiaPorcentagem: 95,
     textoDetalheFrete: "Frete grátis"
   },
