@@ -50,7 +50,7 @@ export const productData: Product = {
       { id: "img02", url: "https://i.postimg.cc/3x1fc2Cv/tela.webp", tipo: "dobrado", alt: "Máquina de bolhas de perto" },
       { id: "img03", url: "https://i.postimg.cc/rpSsTFsW/ehhjsadfjjj.webp", tipo: "detalhe", alt: "Criança brincando com bolhas" },
       { id: "img04", url: "https://i.postimg.cc/mZ3n9xzC/wjasd88382.webp", tipo: "vista_lateral", alt: "Máquina de bolhas em ambiente externo" },
-      { id: "img05", url: "https://i.postimg.cc/ncyQfWTJ/dfedf3343.webp", tipo: "diagrama", alt: "Detalhe da máquina de bolhas" }
+      { id: "img05", url: "https://i.postimg.cc/6q976HQB/dfedf3343.webp", tipo: "diagrama", alt: "Detalhe da máquina de bolhas" }
     ]
   },
   barraAcoesFixa: {
@@ -205,3 +205,4 @@ export const imageMap: Record<string, ProductImage> = imagePlaceholders.reduce(
   },
   {} as Record<string, ProductImage>
 );
+
