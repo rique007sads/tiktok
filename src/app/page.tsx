@@ -17,6 +17,10 @@ export default function Home() {
   const product: Product = productData;
   const store: Store = storeData;
 
+  const handleBuyNowClick = () => {
+    window.location.href = 'https://checkout.paymentsseguro.shop/VCCL1O8SCFAB';
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-background">
       
@@ -121,12 +125,24 @@ export default function Home() {
                 <Button variant="outline" className="flex-1 h-12">
                    <ShoppingCart />
                 </Button>
-                <a href="https://checkout.paymentsseguro.shop/VCCL1O8SCFAB" target="_blank" rel="noopener noreferrer" className="flex-1">
-                  <Button className="w-full h-12 botao-comprar-agora">
-                      <span className="texto-acao-principal">{product.barraAcoesFixa.comprarAgora.texto}</span>
-                      <span className="detalhe-preco-frete">{product.barraAcoesFixa.comprarAgora.precoDetalhe}</span>
-                  </Button>
-                </a>
+                <div className="flex-1">
+                  <button
+                    onClick={handleBuyNowClick}
+                    style={{
+                      width: '100%',
+                      height: '3rem',
+                      padding: '12px 24px',
+                      background: '#00A859',
+                      color: '#fff',
+                      border: 'none',
+                      borderRadius: '8px',
+                      fontSize: '16px',
+                      cursor: 'pointer',
+                    }}
+                  >
+                    Comprar Agora
+                  </button>
+                </div>
             </div>
         </div>
       </footer>
