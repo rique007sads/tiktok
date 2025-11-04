@@ -128,7 +128,7 @@ export default function Home() {
                 <div className="flex-1">
                   <button
                     onClick={handleBuyNowClick}
-                    className="botao-comprar"
+                    className="botao-comprar h-12"
                   >
                     Comprar Agora
                   </button>
