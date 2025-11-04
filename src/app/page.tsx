@@ -125,20 +125,10 @@ export default function Home() {
                 <Button variant="outline" className="flex-1 h-12">
                    <ShoppingCart />
                 </Button>
-                <div className="flex-1">
+                <div className="flex-1 h-12">
                   <button
                     onClick={handleBuyNowClick}
-                    style={{
-                      width: '100%',
-                      height: '3rem',
-                      padding: '12px 24px',
-                      background: '#00A859',
-                      color: '#fff',
-                      border: 'none',
-                      borderRadius: '8px',
-                      fontSize: '16px',
-                      cursor: 'pointer',
-                    }}
+                    className="botao-comprar w-full h-full"
                   >
                     Comprar Agora
                   </button>

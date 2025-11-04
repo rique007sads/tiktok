@@ -160,3 +160,13 @@
     cursor: default !important;
     pointer-events: none;
 }
+
+.botao-comprar {
+  padding: 12px 24px;
+  background: #00A859;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
