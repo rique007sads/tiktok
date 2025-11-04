@@ -124,4 +124,12 @@ export interface Store {
   }[];
 }
 
-    
+declare global {
+    interface Window {
+        ttq?: {
+            page: () => void;
+            track: (event: string, data: any) => void;
+            identify: (data: any) => void;
+        };
+    }
+}

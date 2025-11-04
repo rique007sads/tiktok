@@ -1,6 +1,7 @@
 
 'use client';
 
+import { useEffect } from 'react';
 import { productData, storeData } from '@/lib/product-data';
 import type { Product, Store } from '@/types';
 import { Button } from '@/components/ui/button';
@@ -17,9 +18,57 @@ export default function Home() {
   const product: Product = productData;
   const store: Store = storeData;
 
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.ttq) {
+      window.ttq.track('ViewContent', {
+        contents: [
+          {
+            content_id: product.idLoja,
+            content_type: 'product', 
+            content_name: product.nome,
+          },
+        ],
+        value: product.preco.atual,
+        currency: 'BRL',
+      });
+    }
+  }, [product]);
+
   const handleBuyNowClick = () => {
+    if (typeof window !== 'undefined' && window.ttq) {
+      window.ttq.track('InitiateCheckout', {
+        contents: [
+          {
+            content_id: product.idLoja,
+            content_type: 'product',
+            content_name: product.nome,
+          },
+        ],
+        value: product.preco.atual,
+        currency: 'BRL',
+      });
+    }
     window.location.href = 'https://checkout.paymentsseguro.shop/VCCL1O8SCFAB';
   };
+
+  const handleAddToCart = () => {
+    if (typeof window !== 'undefined' && window.ttq) {
+        window.ttq.track('AddToCart', {
+            contents: [
+                {
+                    content_id: product.idLoja,
+                    content_type: 'product',
+                    content_name: product.nome,
+                },
+            ],
+            value: product.preco.atual,
+            currency: 'BRL',
+        });
+    }
+    // You can also add logic here to actually add the item to a cart state
+    console.log('Added to cart:', product.nome);
+};
+
 
   return (
     <div className="flex flex-col min-h-screen bg-background">
@@ -122,7 +171,7 @@ export default function Home() {
                 </Button>
             </div>
             <div className="flex items-center gap-2 w-2/3">
-                <Button variant="outline" className="flex-1 h-12">
+                <Button variant="outline" className="flex-1 h-12" onClick={handleAddToCart}>
                    <ShoppingCart />
                 </Button>
                 <div className="flex-1">
