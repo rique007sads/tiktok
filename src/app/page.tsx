@@ -125,10 +125,10 @@ export default function Home() {
                 <Button variant="outline" className="flex-1 h-12">
                    <ShoppingCart />
                 </Button>
-                <div className="flex-1 h-12">
+                <div className="flex-1">
                   <button
                     onClick={handleBuyNowClick}
-                    className="botao-comprar w-full h-full"
+                    className="botao-comprar"
                   >
                     Comprar Agora
                   </button>
